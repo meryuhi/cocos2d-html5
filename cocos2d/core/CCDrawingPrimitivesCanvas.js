@@ -48,7 +48,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a point given x and y coordinate measured in points
-     * @override
      * @param {cc.Point} point
      * @param {Number} size
      */
@@ -65,7 +64,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws an array of points.
-     * @override
      * @param {Array<any>} points point of array
      * @param {Number} numberOfPoints
      * @param {Number} size
@@ -88,7 +86,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a line given the origin and destination point measured in points
-     * @override
      * @param {cc.Point} origin
      * @param {cc.Point} destination
      */
@@ -133,7 +130,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a polygon given a pointer to cc.Point coordinates and the number of vertices measured in points.
-     * @override
      * @param {Array<any>} vertices a pointer to cc.Point coordinates
      * @param {Number} numOfVertices the number of vertices measured in points
      * @param {Boolean} closePolygon The polygon can be closed or open
@@ -176,7 +172,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a circle given the center, radius and number of segments.
-     * @override
      * @param {cc.Point} center center of circle
      * @param {Number} radius
      * @param {Number} angle angle in radians
@@ -197,7 +192,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a quad bezier path
-     * @override
      * @param {cc.Point} origin
      * @param {cc.Point} control
      * @param {cc.Point} destination
@@ -222,7 +216,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a cubic bezier path
-     * @override
      * @param {cc.Point} origin
      * @param {cc.Point} control1
      * @param {cc.Point} control2
@@ -248,7 +241,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draw a CatmullRom curve
-     * @override
      * @param {Array<any>} points
      * @param {Number} segments
      */
@@ -258,7 +250,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draw a cardinal spline path
-     * @override
      * @param {Array<any>} config
      * @param {Number} tension
      * @param {Number} segments
@@ -297,7 +288,6 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draw an image
-     * @override
      * @param {HTMLImageElement|HTMLCanvasElement} image
      * @param {cc.Point} sourcePoint
      * @param {cc.Size} sourceSize
