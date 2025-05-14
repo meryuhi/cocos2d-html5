@@ -1,35 +1,29 @@
 // @ts-check
 const { generateDeclaration, Placeholder } = require("@techcross/ts-migrate");
-const { glob } = require("glob");
+const fs = require("fs");
+const moduleConfig = require("./moduleConfig.json");
+
+/**
+ * @param {string[]} files
+ * @param {string[]} result
+ */
+function collectFiles(files, result) {
+    files.forEach(file => {
+        if (moduleConfig.module[file]) {
+            collectFiles(moduleConfig.module[file], result);
+        }
+        else if (result.indexOf(file) === -1) {
+            result.push(file);
+        }
+    });
+    return result;
+}
 
 (async () => {
-    await generateDeclaration([
-        "cocos2d/core/event-manager/CCEventHelper.js",
-        "CCDebugger.js",
-        "cocos2d/core/utils/BinaryLoader.js",
-        "Base64Images.js",
-        "cocos2d/core/platform/CCClass.js",
-        "cocos2d/core/platform/CCCommon.js",
-        "cocos2d/core/cocoa/CCGeometry.js",
-        "cocos2d/core/platform/CCSAXParser.js",
-        "cocos2d/core/platform/CCLoaders.js",
-        "cocos2d/core/platform/CCConfig.js",
-        "cocos2d/core/platform/miniFramework.js",
-        "cocos2d/core/platform/CCMacro.js",
-        "cocos2d/core/platform/CCTypes.js",
-        "cocos2d/core/platform/CCEGLView.js",
-        "cocos2d/core/platform/CCScreen.js",
-        "cocos2d/core/platform/CCVisibleRect.js",
-
-        "cocos2d/core/platform/CCInputManager.js",
-        "cocos2d/core/platform/CCInputExtension.js",
-
-        "cocos2d/core/cocoa/CCAffineTransform.js",
-        "cocos2d/core/support/CCPointExtension.js",
-
-    ], {
+    const files = collectFiles(moduleConfig.module.extensions, []);
+    await generateDeclaration(files, {
         tsOptions: {
-            outFile: "cocos2d.d.ts",
+            outFile: "build/cocos2d.d.ts",
         },
         methodDeclarationPluginOptions: {},
         classPluginOptions: {
@@ -42,6 +36,9 @@ const { glob } = require("glob");
                 ccui: "ccui",
                 cclegacy: "cclegacy",
             },
+            topFunctionArgumentsRange: { min: -1, max: -1 },
+            prevertParseNames: ["prototype", "_tmp"],
+            removeGlobalVars: ["_p"]
         }
     });
 })()
