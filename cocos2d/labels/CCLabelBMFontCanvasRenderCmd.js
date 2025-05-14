@@ -31,6 +31,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelBMFont.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
     };

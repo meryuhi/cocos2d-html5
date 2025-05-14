@@ -138,6 +138,9 @@
         }
     };
 
+    /**
+     * @class
+     */
     cc.ProtectedNode.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._cachedParent = null;

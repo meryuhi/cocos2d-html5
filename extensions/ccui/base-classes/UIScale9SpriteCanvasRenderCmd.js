@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function() {
+    /**
+     * @class
+     */
     ccui.Scale9Sprite.CanvasRenderCmd = function (renderable) {
         cc.Node.CanvasRenderCmd.call(this, renderable);
         this._needDraw = true;

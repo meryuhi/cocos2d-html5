@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.RenderTexture.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = false;

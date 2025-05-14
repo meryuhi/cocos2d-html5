@@ -24,6 +24,7 @@
 
 (function () {
     /**
+     * @class
      * cc.ParticleBatchNode's rendering objects of WebGL
      */
     cc.ParticleBatchNode.WebGLRenderCmd = function (renderable) {

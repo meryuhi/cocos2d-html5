@@ -24,6 +24,9 @@
 
 // ----------------------------------- LabelTTF WebGL render cmd ----------------------------
 (function () {
+    /**
+     * @class
+     */
     cc.LabelTTF.WebGLRenderCmd = function (renderable) {
         this._spriteCmdCtor(renderable);
         this._cacheCmdCtor();

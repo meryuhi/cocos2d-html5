@@ -32,7 +32,10 @@
  * cc.Layer's rendering objects of Canvas
  */
 (function () {
-    //Layer's canvas render command
+    /**
+     * @class
+     * Layer's canvas render command
+     */
     cc.Layer.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._isBaked = false;
@@ -198,7 +201,10 @@
  * cc.LayerColor's rendering objects of Canvas
  */
 (function () {
-    //LayerColor's canvas render command
+    /**
+     * @class
+     * LayerColor's canvas render command
+     */
     cc.LayerColor.CanvasRenderCmd = function (renderable) {
         this._layerCmdCtor(renderable);
         this._needDraw = true;
@@ -320,6 +326,9 @@
  * cc.LayerGradient's rendering objects of Canvas
  */
 (function () {
+    /**
+     * @class
+     */
     cc.LayerGradient.CanvasRenderCmd = function (renderable) {
         cc.LayerColor.CanvasRenderCmd.call(this, renderable);
         this._needDraw = true;

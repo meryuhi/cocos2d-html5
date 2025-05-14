@@ -26,6 +26,9 @@
  * cc.PhysicsDebugNode's rendering objects of WebGL
  */
 (function () {
+    /**
+     * @class
+     */
     cc.PhysicsDebugNode.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

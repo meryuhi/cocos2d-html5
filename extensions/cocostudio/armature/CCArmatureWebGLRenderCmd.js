@@ -24,6 +24,9 @@
 
 (function () {
 
+    /**
+     * @class
+     */
     ccs.Armature.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

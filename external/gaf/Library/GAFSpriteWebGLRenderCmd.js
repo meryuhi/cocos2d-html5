@@ -1,5 +1,8 @@
 
 (function(){
+    /**
+     * @class
+     */
     gaf.Sprite.WebGLRenderCmd = function (renderable) {
         cc.Sprite.WebGLRenderCmd.call(this, renderable);
         this._defualtShader = cc.shaderCache.programForKey(cc.SHADER_POSITION_TEXTURECOLOR);

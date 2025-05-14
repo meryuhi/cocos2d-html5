@@ -370,6 +370,9 @@ ccui.VideoPlayer.EventType = {
         RenderCmd = cc.Node.CanvasRenderCmd;
     }
 
+    /**
+     * @class
+     */
     ccui.VideoPlayer.RenderCmd = function (node) {
         this._rootCtor(node);
         this._listener = null;

@@ -525,6 +525,9 @@ ccs.BoneNode = (function () {
 
     var BoneNodeCanvasCmd = (function () {
 
+        /**
+         * @class
+         */
         var BoneNodeCanvasCmd = function (node) {
             this._rootCtor(node);
             this._debug = false;
@@ -554,6 +557,9 @@ ccs.BoneNode = (function () {
 
     var BoneNodeWebGLCmd = (function () {
 
+        /**
+         * @class
+         */
         var BoneNodeWebGLCmd = function (node) {
             this._rootCtor(node);
             this._debug = false;

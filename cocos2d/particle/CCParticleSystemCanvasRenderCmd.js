@@ -26,6 +26,9 @@
  * ParticleSystem's canvas render command
  */
 (function () {
+    /**
+     * @class
+     */
     cc.ParticleSystem.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = true;

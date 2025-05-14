@@ -26,6 +26,9 @@
  * cc.AtlasNode's rendering objects of Canvas
  */
 (function () {
+    /**
+     * @class
+     */
     cc.AtlasNode.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = false;

@@ -26,6 +26,9 @@
 
 var spine = sp.spine;
 
+/**
+ * @class
+ */
 sp.Skeleton.CanvasRenderCmd = function (renderableObject) {
     this._rootCtor(renderableObject);
     this._needDraw = true;

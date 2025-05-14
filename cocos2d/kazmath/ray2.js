@@ -27,6 +27,9 @@
  */
 
 (function(cc){
+    /**
+     * @class
+     */
     cc.math.Ray2 = function (start, dir) {   // = cc.kmRay2
         this.start = start || new cc.math.Vec2();
         this.dir = dir || new cc.math.Vec2();

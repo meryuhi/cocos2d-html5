@@ -24,6 +24,9 @@
 
 cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
     if (cc._renderType === cc.game.RENDER_TYPE_CANVAS) {
+        /**
+         * @class
+         */
         ccui.Widget.CanvasRenderCmd = function (renderable) {
             this._pNodeCmdCtor(renderable);
             this._needDraw = false;
@@ -73,6 +76,9 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
 
         proto.widgetTransform = proto.transform;
     } else {
+        /**
+         * @class
+         */
         ccui.Widget.WebGLRenderCmd = function (renderable) {
             this._pNodeCmdCtor(renderable);
             this._needDraw = false;

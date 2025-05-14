@@ -35,6 +35,9 @@ function setProgram (node, program) {
 
 // ------------------------------- ClippingNode's WebGL render cmd ------------------------------
 (function () {
+    /**
+     * @class
+     */
     cc.ClippingNode.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;

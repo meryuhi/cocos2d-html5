@@ -1385,7 +1385,10 @@ cc.EditBox.create = function (size, normal9SpriteBg, press9SpriteBg, disabled9Sp
         this.__orientationChanged = null;
     };
 
-    //define the canvas render command
+    /**
+     * @class
+     * define the canvas render command
+     */
     cc.EditBox.CanvasRenderCmd = function (node) {
         this._rootCtor(node);
         this.initializeRenderCmd(node);
@@ -1402,7 +1405,10 @@ cc.EditBox.create = function (size, normal9SpriteBg, press9SpriteBg, disabled9Sp
     };
 
 
-    //define the webgl render command
+    /**
+     * @class
+     * define the webgl render command
+     */
     cc.EditBox.WebGLRenderCmd = function (node) {
         this._rootCtor(node);
         this.initializeRenderCmd(node);

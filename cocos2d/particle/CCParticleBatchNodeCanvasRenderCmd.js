@@ -24,6 +24,7 @@
 
 (function () {
     /**
+     * @class
      * cc.ParticleBatchNode's rendering objects of Canvas
      */
     cc.ParticleBatchNode.CanvasRenderCmd = function (renderable) {

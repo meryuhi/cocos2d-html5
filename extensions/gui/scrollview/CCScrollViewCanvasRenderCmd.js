@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.ScrollView.CanvasRenderCmd = function (renderable) {
         this._layerCmdCtor(renderable);
         this._needDraw = false;

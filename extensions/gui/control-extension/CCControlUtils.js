@@ -37,6 +37,7 @@
  * @param {Number} b
  * @param {Number} a
  * @constructor
+ * @class
  */
 cc.RGBA = function(r,g,b,a){
     this.r = r ;    // percent
@@ -45,6 +46,9 @@ cc.RGBA = function(r,g,b,a){
     this.a = a ;    // percent
 };
 
+/**
+ * @class
+ */
 cc.HSV = function(h,s,v){
     this.h = h ;     // angle in degrees
     this.s = s ;     // percent

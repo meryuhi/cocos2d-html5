@@ -25,6 +25,9 @@
 //TODO find a way to simple these code.
 
 (function () {
+    /**
+     * @class
+     */
     cc.ParallaxNode.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;
@@ -48,6 +51,9 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
     if (cc._renderType !== cc.game.RENDER_TYPE_WEBGL)
         return;
 
+    /**
+     * @class
+     */
     cc.ParallaxNode.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;

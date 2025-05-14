@@ -723,6 +723,9 @@ ccs.Bone.RenderCmd = {
 };
 
 (function () {
+    /**
+     * @class
+     */
     ccs.Bone.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;
@@ -736,6 +739,9 @@ ccs.Bone.RenderCmd = {
 (function () {
     if (!cc.Node.WebGLRenderCmd)
         return;
+    /**
+     * @class
+     */
     ccs.Bone.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;

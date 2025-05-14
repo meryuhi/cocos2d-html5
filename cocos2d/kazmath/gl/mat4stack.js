@@ -32,6 +32,7 @@
      * @param {cc.math.Matrix4} [top]
      * @param {Array<any>} [stack]
      * @constructor
+     * @class
      */
     cc.math.Matrix4Stack = function (top, stack) {
         this.top = top;

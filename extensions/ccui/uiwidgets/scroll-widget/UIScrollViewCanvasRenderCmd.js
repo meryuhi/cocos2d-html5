@@ -1,6 +1,9 @@
 (function () {
     if (!ccui.ProtectedNode.CanvasRenderCmd)
         return;
+    /**
+     * @class
+     */
     ccui.ScrollView.CanvasRenderCmd = function (renderable) {
         this._layoutCmdCtor(renderable);
         //this._needDraw = true;

@@ -24,6 +24,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     ccui.Layout.CanvasRenderCmd = function (renderable) {
         this._pNodeCmdCtor(renderable);
         this._needDraw = false;

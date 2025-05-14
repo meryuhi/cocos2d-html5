@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function(){
+    /**
+     * @class
+     */
     cc.LabelAtlas.CanvasRenderCmd = function(renderableObject){
         cc.AtlasNode.CanvasRenderCmd.call(this, renderableObject);
         this._needDraw = false;

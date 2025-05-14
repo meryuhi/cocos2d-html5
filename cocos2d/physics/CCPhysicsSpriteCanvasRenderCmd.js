@@ -26,6 +26,9 @@
  * cc.PhysicsSprite's rendering objects of Canvas
  */
 (function () {
+    /**
+     * @class
+     */
     cc.PhysicsSprite.CanvasRenderCmd = function (renderableObject) {
         this._spriteCmdCtor(renderableObject);
         this._needDraw = true;

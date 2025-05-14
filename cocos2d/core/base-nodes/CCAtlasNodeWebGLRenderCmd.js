@@ -26,6 +26,9 @@
  * cc.AtlasNode's rendering objects of WebGL
  */
 (function () {
+    /**
+     * @class
+     */
     cc.AtlasNode.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

@@ -95,6 +95,9 @@
         }
     };
 
+    /**
+     * @class
+     */
     ccs.Skin.CanvasRenderCmd = function (renderable) {
         this._spriteCmdCtor(renderable);
         this._realWorldTM = {a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0};
@@ -116,6 +119,9 @@
         this._currentRegion.updateRegion(this.getLocalBB(), this._realWorldTM);
     };
 
+    /**
+     * @class
+     */
     ccs.Skin.WebGLRenderCmd = function (renderable) {
         this._spriteCmdCtor(renderable);
     };

@@ -30,6 +30,9 @@
  * @ignore
  */
 (function(cc){
+    /**
+     * @class
+     */
     cc.math.Plane = function (a, b, c, d) {
         if (a && b === undefined) {
             this.a = a.a;

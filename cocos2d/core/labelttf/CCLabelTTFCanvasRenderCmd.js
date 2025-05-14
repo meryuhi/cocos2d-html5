@@ -45,6 +45,9 @@ cc.LabelTTF._lastEnglish = /[a-zA-Z0-9\-¿¡«À-ÖØ-öø-ʯ\u0300-\u034e\u0350
 cc.LabelTTF._firsrEnglish = /^[a-zA-Z0-9\-¿¡«À-ÖØ-öø-ʯ\u0300-\u034e\u0350-\u036FͰ-ԯ\u2011‵-‷‹⁅]/;
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelTTF.RenderCmd = function () {
         this._fontClientHeight = 18;
         this._fontStyleStr = "";
@@ -398,6 +401,9 @@ cc.LabelTTF._firsrEnglish = /^[a-zA-Z0-9\-¿¡«À-ÖØ-öø-ʯ\u0300-\u034e\u03
 })();
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelTTF.CacheRenderCmd = function () {
         this._labelCmdCtor();
         var locCanvas = this._labelCanvas = document.createElement("canvas");
@@ -472,6 +478,9 @@ cc.LabelTTF._firsrEnglish = /^[a-zA-Z0-9\-¿¡«À-ÖØ-öø-ʯ\u0300-\u034e\u03
 })();
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelTTF.CacheCanvasRenderCmd = function (renderable) {
         this._spriteCmdCtor(renderable);
         this._cacheCmdCtor();
@@ -483,6 +492,9 @@ cc.LabelTTF._firsrEnglish = /^[a-zA-Z0-9\-¿¡«À-ÖØ-öø-ʯ\u0300-\u034e\u03
 })();
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelTTF.CanvasRenderCmd = function (renderable) {
         this._spriteCmdCtor(renderable);
         this._labelCmdCtor();

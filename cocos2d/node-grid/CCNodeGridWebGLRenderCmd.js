@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.NodeGrid.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = false;

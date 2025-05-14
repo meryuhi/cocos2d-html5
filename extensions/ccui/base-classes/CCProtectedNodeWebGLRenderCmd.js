@@ -25,6 +25,9 @@
 (function () {
     if (!cc.Node.WebGLRenderCmd)
         return;
+    /**
+     * @class
+     */
     cc.ProtectedNode.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
     };

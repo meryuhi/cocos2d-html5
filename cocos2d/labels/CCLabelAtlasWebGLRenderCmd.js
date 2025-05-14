@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelAtlas.WebGLRenderCmd = function (renderable) {
         cc.AtlasNode.WebGLRenderCmd.call(this, renderable);
         this._needDraw = true;

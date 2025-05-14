@@ -42,6 +42,9 @@
 })();
 
 (function () {
+    /**
+     * @class
+     */
     ccs.Armature.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

@@ -25,6 +25,9 @@
 //Sprite's WebGL render command
 (function () {
 
+    /**
+     * @class
+     */
     cc.Sprite.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = true;

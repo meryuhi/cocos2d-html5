@@ -561,7 +561,10 @@ cc.Node.RenderCmd.prototype._originSyncStatus = cc.Node.RenderCmd.prototype._syn
 //-----------------------Canvas ---------------------------
 
 (function () {
-//The cc.Node's render command for Canvas
+    /** 
+     * @class
+     * The cc.Node's render command for Canvas
+     */
     cc.Node.CanvasRenderCmd = function (renderable) {
         this._node = renderable;
         this._anchorPointInPoints = {x: 0, y: 0};

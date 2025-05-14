@@ -24,6 +24,7 @@
 
 (function () {
     /**
+     * @class
      * ParticleSystem's WebGL render command
      */
     cc.ParticleSystem.WebGLRenderCmd = function (renderable) {

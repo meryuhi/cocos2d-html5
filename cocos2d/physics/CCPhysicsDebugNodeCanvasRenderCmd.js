@@ -26,6 +26,9 @@
  * cc.PhysicsDebugNode's rendering objects of Canvas
  */
 (function () {
+    /**
+     * @class
+     */
     cc.PhysicsDebugNode.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._buffer = renderableObject._buffer;

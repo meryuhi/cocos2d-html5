@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.TMXLayer.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = true;

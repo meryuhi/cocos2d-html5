@@ -34,6 +34,7 @@
      * @param {Number} [z=0]
      * @param {Number} [w=0]
      * @constructor
+     * @class
      */
     cc.math.Quaternion = function (x, y, z, w) {
         if (x && y === undefined) {

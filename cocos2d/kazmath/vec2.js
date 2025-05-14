@@ -27,6 +27,9 @@
  */
 
 (function(cc){
+    /**
+     * @class
+     */
     cc.math.Vec2 = function (x, y) {
         if(y === undefined){
             this.x = x.x;

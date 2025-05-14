@@ -312,6 +312,9 @@ cc.rendererCanvas = {
 };
 
 (function () {
+    /**
+     * @class
+     */
     cc.CanvasContextWrapper = function (context) {
         this._context = context;
 

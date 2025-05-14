@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.RenderTexture.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

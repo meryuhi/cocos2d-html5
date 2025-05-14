@@ -31,6 +31,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.LabelBMFont.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
     };

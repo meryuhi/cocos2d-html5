@@ -26,6 +26,9 @@
  * cc.ProgressTimer's rendering objects of Canvas
  */
 (function () {
+    /**
+     * @class
+     */
     cc.ProgressTimer.CanvasRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

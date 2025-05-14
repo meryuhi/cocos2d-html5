@@ -26,6 +26,9 @@
 (function () {
     if (!ccui.ProtectedNode.WebGLRenderCmd)
         return;
+    /**
+     * @class
+     */
     ccui.Layout.WebGLRenderCmd = function (renderable) {
         this._pNodeCmdCtor(renderable);
         this._needDraw = false;

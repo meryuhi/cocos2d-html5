@@ -25,6 +25,9 @@
 (function() {
     if(!cc.Node.WebGLRenderCmd) return;
 
+    /**
+     * @class
+     */
     ccui.Scale9Sprite.WebGLRenderCmd = function (renderable) {
         cc.Node.WebGLRenderCmd.call(this, renderable);
 

@@ -283,6 +283,9 @@ ccui.WebView.EventType = {
         RenderCmd = cc.Node.CanvasRenderCmd;
     }
 
+    /**
+     * @class
+     */
     ccui.WebView.RenderCmd = function (node) {
         this._rootCtor(node);
 

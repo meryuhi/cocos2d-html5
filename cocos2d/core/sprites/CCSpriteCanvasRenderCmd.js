@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 (function () {
+    /**
+     * @class
+     */
     cc.Sprite.CanvasRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._needDraw = true;

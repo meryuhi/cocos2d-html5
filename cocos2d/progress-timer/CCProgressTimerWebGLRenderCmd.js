@@ -28,6 +28,9 @@
 (function () {
     var MAX_VERTEX_COUNT = 8;
 
+    /**
+     * @class
+     */
     cc.ProgressTimer.WebGLRenderCmd = function (renderableObject) {
         this._rootCtor(renderableObject);
         this._needDraw = true;

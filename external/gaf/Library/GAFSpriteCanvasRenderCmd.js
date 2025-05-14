@@ -1,5 +1,8 @@
 
 (function() {
+    /**
+     * @class
+     */
     gaf.Sprite.CanvasRenderCmd = function (renderable) {
         cc.Sprite.CanvasRenderCmd.call(this, renderable);
         this._hasTintMult = false;

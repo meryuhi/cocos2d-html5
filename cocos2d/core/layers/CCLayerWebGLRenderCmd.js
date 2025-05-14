@@ -32,6 +32,9 @@
  * cc.Layer's rendering objects of WebGL
  */
 (function () {
+    /**
+     * @class
+     */
     cc.Layer.WebGLRenderCmd = function (renderable) {
         this._rootCtor(renderable);
         this._isBaked = false;
@@ -57,6 +60,9 @@
 (function () {
     var FLOAT_PER_VERTEX = 4;
 
+    /**
+     * @class
+     */
     cc.LayerColor.WebGLRenderCmd = function (renderable) {
         this._layerCmdCtor(renderable);
         this._needDraw = true;
@@ -159,6 +165,9 @@
 (function () {
     var FLOAT_PER_VERTEX = 4;
 
+    /**
+     * @class
+     */
     cc.LayerGradient.WebGLRenderCmd = function (renderable) {
         cc.LayerColor.WebGLRenderCmd.call(this, renderable);
         this._needDraw = true;
