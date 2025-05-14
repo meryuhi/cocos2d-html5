@@ -23,6 +23,9 @@
  ****************************************************************************/
 
 //---------------------- Customer render cmd --------------------
+/**
+ * @class
+ */
 cc.CustomRenderCmd = function (target, func) {
     this._needDraw = true;
     this._target = target;
@@ -89,6 +92,9 @@ function transformChildTree(root) {
 }
 
 //-------------------------Base -------------------------
+/**
+ * @class
+ */
 cc.Node.RenderCmd = function (renderable) {
     this._node = renderable;
     this._anchorPointInPoints = {x: 0, y: 0};
