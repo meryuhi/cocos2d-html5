@@ -682,7 +682,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * Returns an array of all children  <br/>
      * Composing a "tree" structure is a very important feature of CCNode
      * @function
-     * @return {Array<any>} An array of children
+     * @return {Array<cc.Node>} An array of children
      * @example
      *  //This sample code traverses all children nodes, and set their position to (0,0)
      *  var allChildren = parent.getChildren();
@@ -967,7 +967,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      *     You can set everything in UserData pointer, a data block, a structure or an object.
      * </p>
      * @function
-     * @return {object}  A custom user data pointer
+     * @return {Object}  A custom user data pointer
      */
     getUserData: function () {
         return this.userData;
@@ -980,7 +980,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * </p>
      * @function
      * @warning Don't forget to release the memory manually in JSB, especially before you change this data pointer, and before this node is autoreleased.
-     * @param {object} Var A custom user data
+     * @param {Object} Var A custom user data
      */
     setUserData: function (Var) {
         this.userData = Var;
@@ -1658,10 +1658,10 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * If the selector is already scheduled, then the interval parameter will be updated without scheduling it again.</p>
      * @function
      * @param {function} callback A function wrapped as a selector
-     * @param {Number} interval  Tick interval in seconds. 0 means tick every frame. If interval = 0, it's recommended to use scheduleUpdate() instead.
-     * @param {Number} repeat    The selector will be executed (repeat + 1) times, you can use kCCRepeatForever for tick infinitely.
-     * @param {Number} delay     The amount of time that the first tick will wait before execution.
-     * @param {String} key The only string identifying the callback
+     * @param {Number} [interval]  Tick interval in seconds. 0 means tick every frame. If interval = 0, it's recommended to use scheduleUpdate() instead.
+     * @param {Number} [repeat]    The selector will be executed (repeat + 1) times, you can use kCCRepeatForever for tick infinitely.
+     * @param {Number} [delay]     The amount of time that the first tick will wait before execution.
+     * @param {String} [key] The only string identifying the callback
      */
     schedule: function (callback, interval, repeat, delay, key) {
         var len = arguments.length;
@@ -1728,8 +1728,8 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * @function
      * @see cc.Node#schedule
      * @param {function} callback  A function wrapped as a selector
-     * @param {Number} delay  The amount of time that the first tick will wait before execution.
-     * @param {String} key The only string identifying the callback
+     * @param {Number} [delay]  The amount of time that the first tick will wait before execution.
+     * @param {String} [key] The only string identifying the callback
      */
     scheduleOnce: function (callback, delay, key) {
         //selector, delay

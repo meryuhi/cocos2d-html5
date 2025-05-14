@@ -2110,7 +2110,11 @@ _initSys();
 _tmpCanvas1 = null;
 _tmpCanvas2 = null;
 
-//to make sure the cc.log, cc.warn, cc.error and cc.assert would not throw error before init by debugger mode.
+//
+/**
+ * to make sure the cc.log, cc.warn, cc.error and cc.assert would not throw error before init by debugger mode.
+ * @type {(...args: any[]) => void}
+ */
 cc.log = cc.warn = cc.error = cc.assert = function () {
 };
 

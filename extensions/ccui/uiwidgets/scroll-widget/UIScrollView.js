@@ -458,7 +458,7 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
 
     /**
      * Returns inner container's children
-     * @returns {Array<any>}
+     * @returns {Array<ccui.Widget>}
      */
     getChildren: function () {
         return this._innerContainer.getChildren();
@@ -1750,7 +1750,7 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
 
     /**
      * Returns all nodes of inner container
-     * @returns {Array<any>}
+     * @returns {Array<cc.Node>}
      * @deprecated since v3.0, please use getChildren instead.
      */
     getNodes: function () {

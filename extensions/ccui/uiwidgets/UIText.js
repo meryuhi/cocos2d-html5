@@ -391,7 +391,7 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
     /**
      * Enables outline style and sets outline's color and size.
      * @param {cc.Color} outlineColor
-     * @param {cc.Size} outlineSize
+     * @param {Number} outlineSize
      */
     enableOutline: function (outlineColor, outlineSize) {
         this._labelRenderer.enableStroke(outlineColor, outlineSize);

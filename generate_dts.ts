@@ -66,7 +66,7 @@ function collectFiles(files: string[], result: string[]) {
                 ccs: "ccs",
             },
             prevertParseNames: ["prototype", "create", "_tmp", "_LogInfos", "Scale9Sprite"],
-            removeGlobalVars: ["_p", "__extends", "proto", "sp", "spine"],
+            removeGlobalVars: ["_p", "__extends", "proto", "sp", "spine", "res"],
         },
         tsIgnorePluginOptions: {
             classDeclaration: (_, p) => p && "We need to ignore the TS2416 error because cocos2d uses the same static factory method name \"create\" to create objects, which is not currently supported by Typescript.",

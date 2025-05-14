@@ -749,6 +749,7 @@ cc.eventManager = /** @lends cc.eventManager# */{
      * Adds a Custom event listener. It will use a fixed priority of 1.
      * @param {string} eventName
      * @param {function} callback
+     * @param {any} [target]
      * @return {cc.EventListener} the generated event. Needed in order to remove the event from the dispatcher
      */
     addCustomListener: function (eventName, callback, target) {
