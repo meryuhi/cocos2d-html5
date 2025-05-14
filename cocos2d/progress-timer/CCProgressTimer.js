@@ -41,7 +41,7 @@
  *                                              you want a bottom to top then set the midpoint all the way to cc.p(x,0)<br/>
  *                                              you want a top to bottom then set the midpoint all the way to cc.p(x,1)</p>
  * @property {cc.Point}     barChangeRate   - This allows the bar type to move the component at a specific rate.
- * @property {enum}         type            - Type of the progress timer: cc.ProgressTimer.TYPE_RADIAL|cc.ProgressTimer.TYPE_BAR.
+ * @property {cc.ProgressTimer.TYPE_RADIAL|cc.ProgressTimer.TYPE_BAR}         type            - Type of the progress timer: cc.ProgressTimer.TYPE_RADIAL|cc.ProgressTimer.TYPE_BAR.
  * @property {Number}       percentage      - Percentage to change progress, from 0 to 100.
  * @property {cc.Sprite}    sprite          - The sprite to show the progress percentage.
  * @property {Boolean}      reverseDir      - Indicate whether the direction is reversed.

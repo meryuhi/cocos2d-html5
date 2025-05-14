@@ -248,7 +248,7 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
 
     /**
      * Returns Horizontal Alignment of label
-     * @returns {TEXT_ALIGNMENT_LEFT|TEXT_ALIGNMENT_CENTER|TEXT_ALIGNMENT_RIGHT}
+     * @returns {cc.TEXT_ALIGNMENT_LEFT|cc.TEXT_ALIGNMENT_CENTER|cc.TEXT_ALIGNMENT_RIGHT}
      */
     getTextHorizontalAlignment: function () {
         return this._labelRenderer.getHorizontalAlignment();
@@ -269,7 +269,7 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
     },
     /**
      * Gets text vertical alignment.
-     * @returns {VERTICAL_TEXT_ALIGNMENT_TOP|VERTICAL_TEXT_ALIGNMENT_CENTER|VERTICAL_TEXT_ALIGNMENT_BOTTOM}
+     * @returns {cc.VERTICAL_TEXT_ALIGNMENT_TOP|cc.VERTICAL_TEXT_ALIGNMENT_CENTER|cc.VERTICAL_TEXT_ALIGNMENT_BOTTOM}
      */
     getTextVerticalAlignment: function () {
         return this._labelRenderer.getVerticalAlignment();
