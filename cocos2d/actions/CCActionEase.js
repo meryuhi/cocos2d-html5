@@ -2352,6 +2352,9 @@ cc.EaseQuadraticActionIn.create = function(action){
     return new cc.EaseQuadraticActionIn(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuadraticActionIn = {
     easing: cc.EaseQuadraticActionIn.prototype._updateTime,
     reverse: function(){
@@ -2443,6 +2446,9 @@ cc.EaseQuadraticActionOut.create = function(action){
     return new cc.EaseQuadraticActionOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuadraticActionOut = {
     easing: cc.EaseQuadraticActionOut.prototype._updateTime,
     reverse: function(){
@@ -2542,6 +2548,9 @@ cc.EaseQuadraticActionInOut.create = function(action){
     return new cc.EaseQuadraticActionInOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuadraticActionInOut = {
     easing: cc.EaseQuadraticActionInOut.prototype._updateTime,
     reverse: function(){
@@ -2634,6 +2643,9 @@ cc.EaseQuarticActionIn.create = function(action){
     return new cc.EaseQuarticActionIn(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuarticActionIn = {
     easing: cc.EaseQuarticActionIn.prototype._updateTime,
     reverse: function(){
@@ -2726,6 +2738,9 @@ cc.EaseQuarticActionOut.create = function(action){
     return new cc.EaseQuarticActionOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuarticActionOut = {
     easing: cc.EaseQuarticActionOut.prototype._updateTime,
     reverse: function(){
@@ -2822,6 +2837,9 @@ cc.EaseQuarticActionInOut.create = function(action){
     return new cc.EaseQuarticActionInOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuarticActionInOut = {
     easing: cc.EaseQuarticActionInOut.prototype._updateTime,
     reverse: function(){
@@ -2910,6 +2928,9 @@ cc.EaseQuinticActionIn.create = function(action){
     return new cc.EaseQuinticActionIn(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuinticActionIn = {
     easing: cc.EaseQuinticActionIn.prototype._updateTime,
     reverse: function(){
@@ -3003,6 +3024,9 @@ cc.EaseQuinticActionOut.create = function(action){
     return new cc.EaseQuinticActionOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuinticActionOut = {
     easing: cc.EaseQuinticActionOut.prototype._updateTime,
     reverse: function(){
@@ -3099,6 +3123,9 @@ cc.EaseQuinticActionInOut.create = function(action){
     return new cc.EaseQuinticActionInOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeQuinticActionInOut = {
     easing: cc.EaseQuinticActionInOut.prototype._updateTime,
     reverse: function(){
@@ -3191,6 +3218,9 @@ cc.EaseCircleActionIn.create = function(action){
     return new cc.EaseCircleActionIn(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCircleActionIn = {
     easing: cc.EaseCircleActionIn.prototype._updateTime,
     reverse: function(){
@@ -3284,6 +3314,9 @@ cc.EaseCircleActionOut.create = function(action){
     return new cc.EaseCircleActionOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCircleActionOut = {
     easing: cc.EaseCircleActionOut.prototype._updateTime,
     reverse: function(){
@@ -3380,6 +3413,9 @@ cc.EaseCircleActionInOut.create = function(action){
     return new cc.EaseCircleActionInOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCircleActionInOut = {
     easing: cc.EaseCircleActionInOut.prototype._updateTime,
     reverse: function(){
@@ -3472,6 +3508,9 @@ cc.EaseCubicActionIn.create = function(action){
     return new cc.EaseCubicActionIn(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCubicActionIn = {
     easing: cc.EaseCubicActionIn.prototype._updateTime,
     reverse: function(){
@@ -3565,6 +3604,9 @@ cc.EaseCubicActionOut.create = function(action){
     return new cc.EaseCubicActionOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCubicActionOut = {
     easing: cc.EaseCubicActionOut.prototype._updateTime,
     reverse: function(){
@@ -3661,6 +3703,9 @@ cc.EaseCubicActionInOut.create = function(action){
     return new cc.EaseCubicActionInOut(action);
 };
 
+/**
+ * @type {Object}
+ */
 cc._easeCubicActionInOut = {
     easing: cc.EaseCubicActionInOut.prototype._updateTime,
     reverse: function(){
