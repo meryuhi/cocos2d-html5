@@ -1,6 +1,6 @@
 // @ts-check
 const { generateDeclaration, ClassPluginPlaceholder } = require("@techcross/ts-migrate");
-const fs = require("fs");
+const ts = require("typescript");
 const moduleConfig = require("./moduleConfig.json");
 
 /**
@@ -20,7 +20,7 @@ function collectFiles(files, result) {
 }
 
 (async () => {
-    const files = collectFiles(["cocos2d", "extensions"], []);
+    const files = collectFiles(["cocos2d", "extensions"], [moduleConfig.bootFile]);
     await generateDeclaration(files, {
         additionalTSCode: `
         /**
@@ -37,6 +37,7 @@ function collectFiles(files, result) {
             declare var kmMat4: any;
             export { kmMat4 }
 
+            export class DrawingPrimitive{}
             export class CanvasContextWrapper{}
             export class Scheduler{}
             export class Texture2D{}
@@ -74,8 +75,8 @@ function collectFiles(files, result) {
                 ccs: "ccs",
             },
             topFunctionArgumentsRange: { min: -1, max: -1 },
-            prevertParseNames: ["prototype", "create", "proto", "_tmp", "rendererWebGL", "AABB", "Codec"],
-            removeGlobalVars: ["_p", "spine", "sp", "ccs", "cclegacy"],
+            prevertParseNames: ["prototype", "create", "proto", "_tmp", "_LogInfos", "loader", "rendererWebGL", "AABB", "Codec"],
+            removeGlobalVars: ["_p", "spine", "sp", "cclegacy"],
         },
         tsIgnorePluginOptions: {
             classDeclaration: (_, p) => p && "We need to ignore the TS2416 error because cocos2d uses the same static factory method name \"create\" to create objects, which is not currently supported by Typescript.",
@@ -91,6 +92,14 @@ function collectFiles(files, result) {
                 .replace(/Float32Array<.*>/g, "Float32Array")
                 .replace(/Uint32Array<.*>/g, "Uint32Array")
                 .replace(/override /g, "")
-        }
+                .replace(/& typeof loader/g, "")
+        },
+        readFile: (fileName) => {
+            let text = ts.sys.readFile(fileName);
+            if (text && fileName === moduleConfig.bootFile) {
+                text = text.replace(/require\(/g, "omit_require(");
+            }
+            return text;
+        },
     });
 })()
