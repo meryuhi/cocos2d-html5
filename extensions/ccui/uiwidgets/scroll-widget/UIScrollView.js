@@ -420,7 +420,6 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
      * @param {cc.Node} widget
      * @param {Number} [zOrder]
      * @param {Number|string} [tag] tag or name
-     * @returns {boolean}
      */
     addChild: function (widget, zOrder, tag) {
         if (!widget)
@@ -452,7 +451,6 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
      * @override
      * @param {ccui.Widget} child
      * @param {Boolean} cleanup
-     * @returns {boolean}
      */
     removeChild: function (child, cleanup) {
         return this._innerContainer.removeChild(child, cleanup);
