@@ -1778,7 +1778,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * <p>Resumes all scheduled selectors and actions.<br/>
      * This method is called internally by onEnter</p>
      */
-    resume: function () {
+    resume: function (sender) {
         this.scheduler.resumeTarget(this);
         this.actionManager && this.actionManager.resumeTarget(this);
         cc.eventManager.resumeTarget(this);
@@ -1800,7 +1800,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * This method is called internally by onExit</p>
      * @function
      */
-    pause: function () {
+    pause: function (sender) {
         this.scheduler.pauseTarget(this);
         this.actionManager && this.actionManager.pauseTarget(this);
         cc.eventManager.pauseTarget(this);
