@@ -27,6 +27,7 @@
  */
 
 /**
+ * @class
  * A structure that represents an axis-aligned bounding box.
  * cc.kmAABB => cc.math.AABB
  */

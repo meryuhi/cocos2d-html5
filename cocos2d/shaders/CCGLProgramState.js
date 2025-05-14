@@ -37,7 +37,9 @@ var types =
         };
 
 
-
+/**
+ * @class
+ */
 cc.UniformValue = function (uniform, glprogram) {
     this._uniform = uniform;
     this._glprogram = glprogram;
@@ -136,6 +138,9 @@ cc.UniformValue.prototype = {
     },
 };
 
+/**
+ * @class
+ */
 cc.GLProgramState = function (glprogram) {
     this._glprogram = glprogram;
     this._uniforms = {};

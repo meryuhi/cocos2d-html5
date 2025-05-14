@@ -21,7 +21,9 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-
+/**
+ * @class
+ */
 cc.MotionStreak.WebGLRenderCmd = function (renderableObject) {
     this._rootCtor(renderableObject);
     this._needDraw = true;
