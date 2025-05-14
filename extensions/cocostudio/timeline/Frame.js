@@ -86,7 +86,7 @@ ccs.Frame = ccs.Class.extend({
     /**
      * Get timeline
      * @param timeline
-     * @returns {ccs.timeline}
+     * @returns {ccs.Timeline}
      */
     getTimeline: function (timeline) {
         return this._timeline;

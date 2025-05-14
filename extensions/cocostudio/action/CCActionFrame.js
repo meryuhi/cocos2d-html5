@@ -133,7 +133,7 @@ ccs.ActionFrame = ccs.Class.extend(/** @lends ccs.ActionFrame# */{
     time: 0,
 
     /**
-     * The constructor of cc.ActionFrame.
+     * The constructor of ccs.ActionFrame.
      */
     ctor: function () {
         this.frameType = 0;
@@ -146,7 +146,7 @@ ccs.ActionFrame = ccs.Class.extend(/** @lends ccs.ActionFrame# */{
      * Returns the action of ActionFrame. its subClass need override it.
      * @param {number} duration the duration time of ActionFrame
      * @param {ccs.ActionFrame} srcFrame source frame.
-     * @returns {null}
+     * @returns {cc.Action}
      */
     getAction: function (duration, srcFrame) {
         cc.log("Need a definition of <getAction> for ActionFrame");
@@ -424,7 +424,7 @@ ccs.ActionRotationFrame = ccs.ActionFrame.extend(/** @lends ccs.ActionRotationFr
     /**
      * Returns the CCAction of ActionFrame.
      * @param {number} duration
-     * @param {cc.ActionFrame} [srcFrame]
+     * @param {ccs.ActionFrame} [srcFrame]
      * @returns {cc.RotateTo}
      */
     getAction: function (duration, srcFrame) {

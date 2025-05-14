@@ -488,7 +488,7 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
 
     /**
      * Returns collider filter of ccs.Bone.
-     * @returns {cc.ColliderFilter}
+     * @returns {ccs.ColliderFilter}
      */
     getColliderFilter: function () {
         var decoDisplay = this.displayManager.getCurrentDecorativeDisplay();
@@ -559,7 +559,7 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
 
     /**
      * Returns the blend dirty flag whether is dirty.
-     * @returns {Boolean|*|ccs.Bone._blendDirty}
+     * @returns {Boolean}
      */
     isBlendDirty: function () {
         return this._blendDirty;
