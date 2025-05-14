@@ -261,7 +261,7 @@ cc.GridBase = cc.Class.extend(/** @lends cc.GridBase# */{
     afterBlit: function () {
     },
 
-    blit: function () {
+    blit: function (target) {
         cc.log("cc.GridBase.blit(): Shall be overridden in subclass.");
     },
 
