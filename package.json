@@ -1,10 +1,9 @@
 {
   "scripts": {
     "generate-dts": "node generate_dts.js",
-    "test-dts": "tsc build/cocos2d.d.ts"
+    "test-dts": "tsc build/cocos2d.d.ts --watch"
   },
   "dependencies": {
-    "@techcross/ts-migrate": "^0.0.21",
-    "glob": "^11.0.2"
+    "@techcross/ts-migrate": "^0.0.24"
   }
 }

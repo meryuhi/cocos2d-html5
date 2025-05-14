@@ -4,16 +4,25 @@
 		{
 			"type": "npm",
 			"script": "generate-dts",
-			"problemMatcher": [],
+			"problemMatcher": [
+				"$tsc"
+			],
 			"label": "npm: generate-dts",
-			"detail": "node generate_dts.js"
+			"detail": "node generate_dts.js",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		},
 		{
 			"type": "npm",
 			"script": "test-dts",
-			"problemMatcher": ["$tsc"],
+			"problemMatcher": [
+				"$tsc-watch"
+			],
 			"label": "npm: test-dts",
-			"detail": "tsc build/cocos2d.d.ts"
+			"detail": "tsc build/cocos2d.d.ts --watch",
+			"isBackground": true
 		}
 	]
 }
