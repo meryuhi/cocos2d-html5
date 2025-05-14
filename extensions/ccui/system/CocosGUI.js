@@ -42,6 +42,7 @@ ccui.Class.extend = ccui.Class.extend || cc.Class.extend;
  * that same as cc.Node
  * @class
  * @extends ccui.Class
+ * @type {typeof cc.Node}
  */
 ccui.Node = ccui.Node || cc.Node;
 ccui.Node.extend = ccui.Node.extend || cc.Node.extend;
@@ -51,6 +52,7 @@ ccui.Node.extend = ccui.Node.extend || cc.Node.extend;
  * that same as cc.Node
  * @class
  * @extends ccui.Node
+ * @type {typeof cc.ProtectedNode}
  */
 ccui.ProtectedNode = ccui.ProtectedNode || cc.ProtectedNode;
 ccui.ProtectedNode.extend = ccui.ProtectedNode.extend || cc.ProtectedNode.extend;
