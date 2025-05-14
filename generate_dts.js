@@ -1,5 +1,5 @@
 // @ts-check
-const { generateDeclaration, Placeholder } = require("@techcross/ts-migrate");
+const { generateDeclaration, ClassPluginPlaceholder } = require("@techcross/ts-migrate");
 const fs = require("fs");
 const moduleConfig = require("./moduleConfig.json");
 
@@ -49,21 +49,29 @@ function collectFiles(files, result) {
             declare var Scale9Sprite: cc.Scale9Sprite;
             export { Scale9Sprite }
         }
+        namespace ccs
+        {
+            export class Shape{}
+        }
         `,
         tsOptions: {
             outFile: "build/cocos2d.d.ts",
         },
         methodDeclarationPluginOptions: {
-            normalizeSignatureMethodNames: ["init", "initWithString", "initWithDuration", "initWithAction", "initWithFile", "startWithTarget", "onTouchBegan", "onTouchCancelled"]
+            normalizeSignatureMethodNames: ["init", "initWithString", "initWithDuration", "initWithAction", "initWithFile", "startWithTarget", "onTouchBegan", "onTouchCancelled", "onEnter"]
         },
         classPluginOptions: {
-            classCreator: `cc.Class.extend(${Placeholder.Body})`,
-            classExtender: `${Placeholder.Name}.extend(${Placeholder.Body})`,
+            classCreators: [
+                `cc.Class.extend(${ClassPluginPlaceholder.Body})`,
+                `ccs.Class.extend(${ClassPluginPlaceholder.Body})`,
+            ],
+            classExtenders: [`${ClassPluginPlaceholder.Name}.extend(${ClassPluginPlaceholder.Body})`],
         },
         namespacePluginOptions: {
             globalVarMap: {
                 cc: "cc",
                 ccui: "ccui",
+                ccs: "ccs",
             },
             topFunctionArgumentsRange: { min: -1, max: -1 },
             prevertParseNames: ["prototype", "create", "proto", "_tmp", "rendererWebGL", "AABB", "Codec"],
@@ -71,7 +79,11 @@ function collectFiles(files, result) {
         },
         tsIgnorePluginOptions: {
             classDeclaration: (_, p) => p && "We need to ignore the TS2416 error because cocos2d uses the same static factory method name \"create\" to create objects, which is not currently supported by Typescript.",
-            classElement: (n, _, e) => n === "ParallaxNode" && e === "addChild" ? "We need to ignore the TS2416 error because cocos2d uses different signatures at different inheritance levels." : undefined
+            classElement: (n, _, e) => 
+            (n === "ParallaxNode" && e === "addChild")
+            || (n === "ArmatureAnimation" && e === "play")
+            || (n === "Tween" && e === "play")
+             ? "We need to ignore the TS2416 error because cocos2d uses different signatures at different inheritance levels." : undefined
         },
         tsdReplacer: (code) => {
             return code
