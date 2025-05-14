@@ -331,7 +331,7 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
 
     /**
      * Returns the renderer of ccui.Text.
-     * @returns {cc.Node}
+     * @returns {ccui.Widget}
      */
     getVirtualRenderer: function () {
         return this._labelRenderer;

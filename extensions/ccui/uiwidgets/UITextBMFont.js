@@ -157,7 +157,7 @@ ccui.LabelBMFont = ccui.TextBMFont = ccui.Widget.extend(/** @lends ccui.TextBMFo
     /**
      * Returns the renderer of TextBMFont
      * @override
-     * @returns {cc.Node}
+     * @returns {ccui.Widget}
      */
     getVirtualRenderer: function () {
         return this._labelBMFontRenderer;

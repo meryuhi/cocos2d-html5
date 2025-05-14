@@ -571,7 +571,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
 
     /**
      * Gets the Virtual Renderer of widget.
-     * @returns {cc.Node}
+     * @returns {ccui.Widget}
      */
     getVirtualRenderer: function () {
         return this._buttonScale9Renderer;

@@ -575,7 +575,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
 
     /**
      * Returns the bar renderer.
-     * @returns {cc.Node}
+     * @returns {ccui.Widget}
      */
     getVirtualRenderer: function () {
         return this._barRenderer;

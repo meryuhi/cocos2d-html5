@@ -240,7 +240,7 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
     /**
      * Returns the renderer of ccui.ImageView
      * @override
-     * @returns {cc.Node}
+     * @returns {ccui.Widget}
      */
     getVirtualRenderer: function () {
         return this._imageRenderer;
