@@ -318,7 +318,7 @@ ccui.Layout = ccui.Widget.extend(/** @lends ccui.Layout# */{
 
     /**
      * Adds a widget to the container.
-     * @param {ccui.Widget} widget
+     * @param {cc.Node} widget
      * @param {Number} [zOrder]
      * @param {Number|string} [tag] tag or name
      * @override
@@ -333,7 +333,7 @@ ccui.Layout = ccui.Widget.extend(/** @lends ccui.Layout# */{
 
     /**
      * Removes child widget from ccui.Layout, and sets the layout dirty flag to true.
-     * @param {ccui.Widget} widget
+     * @param {cc.Node} widget
      * @param {Boolean} [cleanup=true]
      * @override
      */

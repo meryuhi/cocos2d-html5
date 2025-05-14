@@ -163,7 +163,7 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
 
     /**
      * Add a child into the cc.ParticleBatchNode
-     * @param {cc.ParticleSystem} child
+     * @param {cc.Node} child
      * @param {Number} zOrder
      * @param {Number} tag
      */
@@ -233,7 +233,7 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
     },
 
     /**
-     * @param {cc.ParticleSystem} child
+     * @param {cc.Node} child
      * @param {Boolean} cleanup
      */
     removeChild: function (child, cleanup) {
@@ -265,7 +265,7 @@ cc.ParticleBatchNode = cc.Node.extend(/** @lends cc.ParticleBatchNode# */{
 
     /**
      * Reorder will be done in this function, no "lazy" reorder to particles
-     * @param {cc.ParticleSystem} child
+     * @param {cc.Node} child
      * @param {Number} zOrder
      */
     reorderChild: function (child, zOrder) {
