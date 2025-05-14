@@ -26,6 +26,9 @@ var GlobalVertexBuffer = (function () {
 
 var VERTICES_SIZE = 888;
 
+/**
+ * @type {Object}
+ */
 var GlobalVertexBuffer = function (gl, byteLength) {
     // WebGL buffer
     this.gl = gl;
