@@ -137,7 +137,7 @@ cc.inject = function (srcPrototype, destPrototype) {
 };
 
 /**
- * @namespace
+ * @class
  * @name ClassManager
  */
 var ClassManager = function () {
