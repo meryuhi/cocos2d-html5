@@ -854,7 +854,7 @@ ccui.Layout = ccui.Widget.extend(/** @lends ccui.Layout# */{
 
     /**
      * Gets LayoutType of ccui.Layout.
-     * @returns {null}
+     * @returns {Number}
      */
     getLayoutType: function () {
         return this._layoutType;
