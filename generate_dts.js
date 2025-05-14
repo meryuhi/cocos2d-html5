@@ -51,7 +51,7 @@ function collectFiles(files, result) {
             outFile: "build/cocos2d.d.ts",
         },
         methodDeclarationPluginOptions: {
-            omitMethodNames: ["_createCloneInstance", "onTouchCancelled", "onTouchBegan"]
+            normalizeSignatureMethodNames: ["init", "initWithString", "initWithDuration", "initWithAction", "onTouchBegan"]
         },
         classPluginOptions: {
             classCreator: `cc.Class.extend(${Placeholder.Body})`,
@@ -63,9 +63,14 @@ function collectFiles(files, result) {
                 ccui: "ccui",
             },
             topFunctionArgumentsRange: { min: -1, max: -1 },
-            prevertParseNames: ["prototype", "proto", "_tmp", "AABB"],
+            prevertParseNames: ["prototype", "proto", "_tmp", "rendererWebGL", "AABB", "Codec"],
             removeGlobalVars: ["_p", "spine", "sp", "ccs", "cclegacy"],
         },
-        outFile: "build/cocos2d.js",
+        tsdReplacer: (code) => {
+            return code
+                .replace(/Uint8Array<.*>/g, "Uint8Array")
+                .replace(/Float32Array<.*>/g, "Float32Array")
+                .replace(/override /g, "")
+        }
     });
 })()

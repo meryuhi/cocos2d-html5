@@ -4,6 +4,7 @@
     "test-dts": "tsc build/cocos2d.d.ts --watch"
   },
   "dependencies": {
-    "@techcross/ts-migrate": "^0.0.24"
+    "@techcross/ts-migrate": "^0.0.28",
+    "typescript": "^3.5.3"
   }
 }
