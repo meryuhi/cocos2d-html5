@@ -1,4 +1,7 @@
 //Region is used to label a rect which world axis aligned.
+/**
+ * @class
+ */
 var Region = function () {
     this._minX = 0;
     this._minY = 0;
@@ -213,6 +216,9 @@ function unionArea(r1, r2) {
 
 //DirtyRegion is used to collect the dirty area which need to be rerendered in canvas
 //there may be many small regions which is dirty, the dirty region will merge it into several big one to optimise performance
+/**
+ * @class
+ */
 var DirtyRegion = function() {
     this.dirtyList = [];
     this.hasClipRect = false;
