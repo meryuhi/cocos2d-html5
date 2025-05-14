@@ -4,9 +4,7 @@
 		{
 			"type": "npm",
 			"script": "generate-dts",
-			"problemMatcher": [
-				"$tsc"
-			],
+			"problemMatcher": [],
 			"label": "npm: generate-dts",
 			"detail": "node generate_dts.js",
 			"group": {
