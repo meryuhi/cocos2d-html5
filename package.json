@@ -1,6 +1,7 @@
 {
+  "type": "module",
   "scripts": {
-    "generate-dts": "node generate_dts.js",
+    "generate-dts": "node --experimental-strip-types generate_dts.ts",
     "test-dts": "tsc build/cocos2d.d.ts --watch"
   },
   "dependencies": {

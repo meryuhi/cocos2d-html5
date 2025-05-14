@@ -1,13 +1,8 @@
-// @ts-check
-const { generateDeclaration, ClassPluginPlaceholder } = require("@techcross/ts-migrate");
-const ts = require("typescript");
-const moduleConfig = require("./moduleConfig.json");
+import { generateDeclaration, ClassPluginPlaceholder } from "@techcross/ts-migrate";
+import ts from "typescript";
+import moduleConfig from "./moduleConfig.json" with { type: "json" };
 
-/**
- * @param {string[]} files
- * @param {string[]} result
- */
-function collectFiles(files, result) {
+function collectFiles(files: string[], result: string[]) {
     files.forEach(file => {
         if (moduleConfig.module[file]) {
             collectFiles(moduleConfig.module[file], result);
