@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "generate-dts": "node generate_dts.js"
+  },
+  "dependencies": {
+    "@techcross/ts-migrate": "^0.0.14",
+    "glob": "^11.0.2"
+  }
+}
