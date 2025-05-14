@@ -390,7 +390,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
      * @param {cc.Color} start
      * @param {cc.Color} end
      * @param {cc.Point} [v=cc.p(0, -1)]
-     * @param {Array<any>|Null} stops
+     * @param {Array<any>|Null} [stops=]
      *
      * @example Using ColorStops argument:
      * //startColor & endColor are for default and backward compatibility
