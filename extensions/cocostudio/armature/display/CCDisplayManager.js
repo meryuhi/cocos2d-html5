@@ -200,7 +200,7 @@ ccs.DisplayManager = ccs.Class.extend(/** @lends ccs.DisplayManager */{
 
     /**
      * Returns the display node list.
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getDecorativeDisplayList: function () {
         return this._decoDisplayList;

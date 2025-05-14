@@ -162,7 +162,7 @@ cc.AnimationFrame.create = function(spriteFrame,delayUnits,userInfo){
  * </p>
  * @class
  * @extends cc.Class
- * @param {Array} frames
+ * @param {Array<any>} frames
  * @param {Number} delay
  * @param {Number} [loops=1]
  *
@@ -223,7 +223,7 @@ cc.Animation = cc.Class.extend(/** @lends cc.Animation# */{
 
     /**
      * Returns the array of animation frames
-     * @return {Array}
+     * @return {Array<any>}
      */
     getFrames:function () {
         return this._frames;
@@ -231,7 +231,7 @@ cc.Animation = cc.Class.extend(/** @lends cc.Animation# */{
 
     /**
      * Sets array of animation frames
-     * @param {Array} frames
+     * @param {Array<any>} frames
      */
     setFrames:function (frames) {
         this._frames = frames;
@@ -275,7 +275,7 @@ cc.Animation = cc.Class.extend(/** @lends cc.Animation# */{
 
     /**
      * Initializes a cc.Animation with cc.AnimationFrame, do not call this method yourself, please pass parameters to constructor to initialize.
-     * @param {Array} arrayOfAnimationFrames
+     * @param {Array<any>} arrayOfAnimationFrames
      * @param {Number} delayPerUnit
      * @param {Number} [loops=1]
      */
@@ -401,7 +401,7 @@ cc.Animation = cc.Class.extend(/** @lends cc.Animation# */{
 
     /**
      * Initializes a cc.Animation with frames and a delay between frames, do not call this method yourself, please pass parameters to constructor to initialize.
-     * @param {Array} frames
+     * @param {Array<any>} frames
      * @param {Number} delay
      * @param {Number} [loops=1]
      */
@@ -460,7 +460,7 @@ cc.Animation = cc.Class.extend(/** @lends cc.Animation# */{
  * Creates an animation.
  * @deprecated since v3.0, please use new construction instead
  * @see cc.Animation
- * @param {Array} frames
+ * @param {Array<any>} frames
  * @param {Number} delay
  * @param {Number} [loops=1]
  * @return {cc.Animation}

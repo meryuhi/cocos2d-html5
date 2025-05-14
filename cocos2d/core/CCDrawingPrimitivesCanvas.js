@@ -66,7 +66,7 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
     /**
      * draws an array of points.
      * @override
-     * @param {Array} points point of array
+     * @param {Array<any>} points point of array
      * @param {Number} numberOfPoints
      * @param {Number} size
      */
@@ -134,7 +134,7 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
     /**
      * draws a polygon given a pointer to cc.Point coordinates and the number of vertices measured in points.
      * @override
-     * @param {Array} vertices a pointer to cc.Point coordinates
+     * @param {Array<any>} vertices a pointer to cc.Point coordinates
      * @param {Number} numOfVertices the number of vertices measured in points
      * @param {Boolean} closePolygon The polygon can be closed or open
      * @param {Boolean} [fill=] The polygon can be closed or open and optionally filled with current color
@@ -165,7 +165,7 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
 
     /**
      * draws a solid polygon given a pointer to CGPoint coordinates, the number of vertices measured in points, and a color.
-     * @param {Array} polygons
+     * @param {Array<any>} polygons
      * @param {Number} numberOfPoints
      * @param {cc.Color} color
      */
@@ -249,7 +249,7 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
     /**
      * draw a CatmullRom curve
      * @override
-     * @param {Array} points
+     * @param {Array<any>} points
      * @param {Number} segments
      */
     drawCatmullRom:function (points, segments) {
@@ -259,7 +259,7 @@ cc.DrawingPrimitiveCanvas = cc.Class.extend(/** @lends cc.DrawingPrimitiveCanvas
     /**
      * draw a cardinal spline path
      * @override
-     * @param {Array} config
+     * @param {Array<any>} config
      * @param {Number} tension
      * @param {Number} segments
      */

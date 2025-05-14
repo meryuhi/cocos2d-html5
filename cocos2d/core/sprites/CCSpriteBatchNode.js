@@ -52,7 +52,7 @@
  * var spriteBatchNode = new cc.SpriteBatchNode(texture);
  *
  * @property {cc.TextureAtlas}  textureAtlas    - The texture atlas
- * @property {Array}            descendants     - <@readonly> Descendants of sprite batch node
+ * @property {Array<any>}            descendants     - <@readonly> Descendants of sprite batch node
  */
 cc.SpriteBatchNode = cc.Node.extend(/** @lends cc.SpriteBatchNode# */{
     _blendFunc: null,
@@ -110,7 +110,7 @@ cc.SpriteBatchNode = cc.Node.extend(/** @lends cc.SpriteBatchNode# */{
 
     /**
      * Return Descendants of cc.SpriteBatchNode
-     * @return {Array}
+     * @return {Array<any>}
      * @deprecated since v3.12
      */
     getDescendants: function () {

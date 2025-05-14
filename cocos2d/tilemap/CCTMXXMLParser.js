@@ -104,7 +104,7 @@ cc.TMX_TILE_FLIPPED_MASK = (~(cc.TMX_TILE_FLIPPED_ALL)) >>> 0;
  * @class
  * @extends cc.Class
  *
- * @property {Array}    properties  - Properties of the layer info.
+ * @property {Array<any>}    properties  - Properties of the layer info.
  */
 cc.TMXLayerInfo = cc.Class.extend(/** @lends cc.TMXLayerInfo# */{
     properties:null,
@@ -134,7 +134,7 @@ cc.TMXLayerInfo = cc.Class.extend(/** @lends cc.TMXLayerInfo# */{
 
     /**
      * Gets the Properties.
-     * @return {Array}
+     * @return {Array<any>}
      */
     getProperties:function () {
         return this.properties;
@@ -228,7 +228,7 @@ cc.TMXTilesetInfo = cc.Class.extend(/** @lends cc.TMXTilesetInfo# */{
  * @class
  * @extends cc.saxParser
  *
- * @property {Array}    properties          - Properties of the map info.
+ * @property {Array<any>}    properties          - Properties of the map info.
  * @property {Number}   orientation         - Map orientation.
  * @property {Object}   parentElement       - Parent element.
  * @property {Number}   parentGID           - Parent GID.
@@ -376,7 +376,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
 
     /**
      * Layers
-     * @return {Array}
+     * @return {Array<any>}
      */
     getLayers:function () {
         return this._layers;
@@ -392,7 +392,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
 
     /**
      * tilesets
-     * @return {Array}
+     * @return {Array<any>}
      */
     getTilesets:function () {
         return this._tilesets;
@@ -408,7 +408,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
 
     /**
      * ObjectGroups
-     * @return {Array}
+     * @return {Array<any>}
      */
     getObjectGroups:function () {
         return this._objectGroups;
@@ -488,7 +488,7 @@ cc.TMXMapInfo = cc.SAXParser.extend(/** @lends cc.TMXMapInfo# */{
 
     /**
      * Properties
-     * @return {Array}
+     * @return {Array<any>}
      */
     getProperties:function () {
         return this.properties;

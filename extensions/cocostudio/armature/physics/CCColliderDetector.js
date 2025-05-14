@@ -102,7 +102,7 @@ ccs.ColliderBody = ccs.Class.extend(/** @lends ccs.ColliderBody# */{
 
     /**
      * get calculated vertex list
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getCalculatedVertexList: function () {
         return this._calculatedVertexList;
@@ -205,7 +205,7 @@ ccs.ColliderDetector = ccs.Class.extend(/** @lends ccs.ColliderDetector# */{
 
     /**
      * add contourData
-     * @param {Array} contourDataList
+     * @param {Array<any>} contourDataList
      */
     addContourDataList: function (contourDataList) {
         for (var i = 0; i < contourDataList.length; i++) {

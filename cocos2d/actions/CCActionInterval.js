@@ -2068,7 +2068,7 @@ cc.bezierAt = function (a, b, c, d, t) {
  * @class
  * @extends cc.ActionInterval
  * @param {Number} t time in seconds
- * @param {Array} c Array of points
+ * @param {Array<any>} c Array of points
  * @example
  * var bezier = [cc.p(0, windowSize.height / 2), cc.p(300, -windowSize.height / 2), cc.p(300, 100)];
  * var bezierForward = new cc.BezierBy(3, bezier);
@@ -2081,7 +2081,7 @@ cc.BezierBy = cc.ActionInterval.extend(/** @lends cc.BezierBy# */{
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
      * @param {Number} t time in seconds
-     * @param {Array} c Array of points
+     * @param {Array<any>} c Array of points
      */
     ctor: function (t, c) {
         cc.ActionInterval.prototype.ctor.call(this);
@@ -2095,7 +2095,7 @@ cc.BezierBy = cc.ActionInterval.extend(/** @lends cc.BezierBy# */{
     /**
      * Initializes the action.
      * @param {Number} t time in seconds
-     * @param {Array} c Array of points
+     * @param {Array<any>} c Array of points
      * @return {Boolean}
      */
     initWithDuration: function (t, c) {
@@ -2198,7 +2198,7 @@ cc.BezierBy = cc.ActionInterval.extend(/** @lends cc.BezierBy# */{
  * Relative to its movement.
  * @function
  * @param {Number} t time in seconds
- * @param {Array} c Array of points
+ * @param {Array<any>} c Array of points
  * @return {cc.BezierBy}
  * @example
  * // example
@@ -2215,7 +2215,7 @@ cc.bezierBy = function (t, c) {
  * @static
  * @deprecated since v3.0 please use cc.bezierBy instead.
  * @param {Number} t time in seconds
- * @param {Array} c Array of points
+ * @param {Array<any>} c Array of points
  * @return {cc.BezierBy}
  */
 cc.BezierBy.create = cc.bezierBy;
@@ -2225,7 +2225,7 @@ cc.BezierBy.create = cc.bezierBy;
  * @class
  * @extends cc.BezierBy
  * @param {Number} t
- * @param {Array} c array of points
+ * @param {Array<any>} c array of points
  * @example
  * var bezier = [cc.p(0, windowSize.height / 2), cc.p(300, -windowSize.height / 2), cc.p(300, 100)];
  * var bezierTo = new cc.BezierTo(2, bezier);
@@ -2236,7 +2236,7 @@ cc.BezierTo = cc.BezierBy.extend(/** @lends cc.BezierTo# */{
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
      * @param {Number} t
-     * @param {Array} c array of points
+     * @param {Array<any>} c array of points
      * var bezierTo = new cc.BezierTo(2, bezier);
      */
     ctor: function (t, c) {
@@ -2248,7 +2248,7 @@ cc.BezierTo = cc.BezierBy.extend(/** @lends cc.BezierTo# */{
     /**
      * Initializes the action.
      * @param {Number} t time in seconds
-     * @param {Array} c Array of points
+     * @param {Array<any>} c Array of points
      * @return {Boolean}
      */
     initWithDuration: function (t, c) {
@@ -2289,7 +2289,7 @@ cc.BezierTo = cc.BezierBy.extend(/** @lends cc.BezierTo# */{
  * An action that moves the target with a cubic Bezier curve to a destination point.
  * @function
  * @param {Number} t
- * @param {Array} c array of points
+ * @param {Array<any>} c array of points
  * @return {cc.BezierTo}
  * @example
  * // example
@@ -2304,7 +2304,7 @@ cc.bezierTo = function (t, c) {
  * @static
  * @deprecated since v3.0 please use cc.bezierTo instead.
  * @param {Number} t
- * @param {Array} c array of points
+ * @param {Array<any>} c array of points
  * @return {cc.BezierTo}
  */
 cc.BezierTo.create = cc.bezierTo;

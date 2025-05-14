@@ -102,7 +102,7 @@ cc.LoaderScene = cc.Scene.extend({
 
     /**
      * init with resources
-     * @param {Array} resources
+     * @param {Array<any>} resources
      * @param {Function|String} cb
      * @param {Object} target
      */

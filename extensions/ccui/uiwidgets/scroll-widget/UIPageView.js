@@ -344,7 +344,7 @@ ccui.PageView = ccui.ListView.extend(/** @lends ccui.PageView# */{
 
     /**
      * Returns all pages of PageView
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getPages: function () {
         return this.getItems();

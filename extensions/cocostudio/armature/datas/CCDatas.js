@@ -401,7 +401,7 @@ ccs.ParticleDisplayData = ccs.DisplayData.extend(/** @lends ccs.ParticleDisplayD
  * @class ccs.BoneData
  * @extends ccs.BaseData
  *
- * @property {Array}                    displayDataList                - the display data list
+ * @property {Array<any>}                    displayDataList                - the display data list
  * @property {String}                   name                           - the name of Bone
  * @property {String}                   parentName                     - the parent name of bone
  * @property {cc.AffineTransform}       boneDataTransform              - the bone transform data
@@ -601,7 +601,7 @@ ccs.FrameData = ccs.BaseData.extend(/** @lends ccs.FrameData# */{
  * @property {Number}                    delay             - the delay of bone's movement.
  * @property {Number}                    scale             - the scale of bone's movement.
  * @property {Number}                    duration          - the duration of bone's movement.
- * @property {Array}                     frameList         - the frame list of bone's movement.
+ * @property {Array<any>}                     frameList         - the frame list of bone's movement.
  * @property {String}                    name              - the name of bone's movement.
  */
 ccs.MovementBoneData = ccs.Class.extend(/** @lends ccs.MovementBoneData# */{

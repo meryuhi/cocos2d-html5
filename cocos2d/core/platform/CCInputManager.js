@@ -118,7 +118,7 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
     /**
      * @function
-     * @param {Array} touches
+     * @param {Array<any>} touches
      */
     handleTouchesBegin: function (touches) {
         var selTouch, index, curTouch, touchID,
@@ -153,7 +153,7 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
     /**
      * @function
-     * @param {Array} touches
+     * @param {Array<any>} touches
      */
     handleTouchesMove: function (touches) {
         var selTouch, index, touchID,
@@ -185,7 +185,7 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
     /**
      * @function
-     * @param {Array} touches
+     * @param {Array<any>} touches
      */
     handleTouchesEnd: function (touches) {
         var handleTouches = this.getSetOfTouchesEndOrCancel(touches);
@@ -199,7 +199,7 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
     /**
      * @function
-     * @param {Array} touches
+     * @param {Array<any>} touches
      */
     handleTouchesCancel: function (touches) {
         var handleTouches = this.getSetOfTouchesEndOrCancel(touches);
@@ -213,8 +213,8 @@ cc.inputManager = /** @lends cc.inputManager# */{
 
     /**
      * @function
-     * @param {Array} touches
-     * @returns {Array}
+     * @param {Array<any>} touches
+     * @returns {Array<any>}
      */
     getSetOfTouchesEndOrCancel: function (touches) {
         var selTouch, index, touchID, handleTouches = [], locTouches = this._touches, locTouchesIntDict = this._touchesIntegerDict;
@@ -363,7 +363,7 @@ cc.inputManager = /** @lends cc.inputManager# */{
      * @function
      * @param {Touch} event
      * @param {cc.Point} pos
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getTouchesByEvent: function (event, pos) {
         var touchArr = [], locView = this._glView;

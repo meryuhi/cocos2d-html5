@@ -609,7 +609,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
      * start & endColor will be provided as default values
      * @example
      * [{p: 0, color: cc.color.RED},{p: 1, color: cc.color.RED},...]
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getColorStops: function () {
         return this._colorStops;
@@ -686,7 +686,7 @@ cc.LayerGradient.create = function (start, end, v, stops) {
  *  <li>- Only one children will be active a time</li></ul>
  * @class
  * @extends cc.Layer
- * @param {Array} layers an array of cc.Layer
+ * @param {Array<any>} layers an array of cc.Layer
  * @example
  * // Example
  * var multiLayer = new cc.LayerMultiple(layer1, layer2, layer3);//any number of layers
@@ -698,7 +698,7 @@ cc.LayerMultiplex = cc.Layer.extend(/** @lends cc.LayerMultiplex# */{
 
     /**
      * Constructor of cc.LayerMultiplex
-     * @param {Array} layers an array of cc.Layer
+     * @param {Array<any>} layers an array of cc.Layer
      */
     ctor: function (layers) {
         cc.Layer.prototype.ctor.call(this);
@@ -710,7 +710,7 @@ cc.LayerMultiplex = cc.Layer.extend(/** @lends cc.LayerMultiplex# */{
 
     /**
      * Initialization of the layer multiplex, please do not call this function by yourself, you should pass the parameters to constructor to initialize a layer multiplex
-     * @param {Array} layers an array of cc.Layer
+     * @param {Array<any>} layers an array of cc.Layer
      * @return {Boolean}
      */
     initWithLayers: function (layers) {

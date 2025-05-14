@@ -153,7 +153,7 @@ cc.vertexLineIntersect = function (Ax, Ay, Bx, By, Cx, Cy, Dx, Dy) {
 
 /**
  * returns wheter or not polygon defined by vertex list is clockwise
- * @param {Array} verts
+ * @param {Array<any>} verts
  * @return {Boolean}
  */
 cc.vertexListIsClockwise = function(verts) {

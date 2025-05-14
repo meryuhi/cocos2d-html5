@@ -338,7 +338,7 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
 
     /**
      * Plays animation with names
-     * @param {Array} movementNames
+     * @param {Array<any>} movementNames
      * @param {Number} durationTo
      * @param {Boolean} loop
      */
@@ -359,7 +359,7 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
 
     /**
      * Plays animation by indexes
-     * @param {Array} movementIndexes
+     * @param {Array<any>} movementIndexes
      * @param {Number} durationTo
      * @param {Boolean} loop
      */

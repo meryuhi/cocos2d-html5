@@ -252,7 +252,7 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
 
     /**
      * Pauses all running actions, returning a list of targets whose actions were paused.
-     * @return {Array}  a list of targets whose actions were paused.
+     * @return {Array<any>}  a list of targets whose actions were paused.
      */
     pauseAllRunningActions:function(){
         var idsWithActions = [];
@@ -269,7 +269,7 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
 
     /**
      * Resume a set of targets (convenience function to reverse a pauseAllRunningActions call)
-     * @param {Array} targetsToResume
+     * @param {Array<any>} targetsToResume
      */
     resumeTargets:function(targetsToResume){
         if (!targetsToResume)

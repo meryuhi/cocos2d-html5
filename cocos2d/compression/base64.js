@@ -63,7 +63,7 @@ cc.Codec.Base64.decode = function Jacob__Codec__Base64__decode(input) {
  * @function
  * @param {String} input The String to convert to an array of Integers
  * @param {Number} bytes
- * @return {Array}
+ * @return {Array<any>}
  * @example
  * //decode string to array
  * var decodeArr = cc.Codec.Base64.decodeAsArray("U29tZSBTdHJpbmc=");

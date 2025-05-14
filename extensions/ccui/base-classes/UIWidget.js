@@ -1675,7 +1675,7 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
     /**
      * Returns all children.
      * @deprecated since v3.0, please use getChildren instead.
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getNodes: function () {
         return this._nodes;

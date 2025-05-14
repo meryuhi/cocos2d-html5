@@ -81,7 +81,7 @@ ListEntry.put = function (entry) {
 
 /**
  * A update entry list
- * @param {Array} list Which list does it belong to ?
+ * @param {Array<any>} list Which list does it belong to ?
  * @param {ListEntry} entry entry in the list
  * @param {cc.Class} target hash key (retained)
  * @param {function} callback
@@ -118,7 +118,7 @@ HashUpdateEntry.put = function (entry) {
 //
 /**
  * Hash Element used for "selectors with interval"
- * @param {Array} timers
+ * @param {Array<any>} timers
  * @param {cc.Class} target  hash key (retained)
  * @param {Number} timerIndex
  * @param {CallbackTimer} currentTimer
@@ -865,7 +865,7 @@ cc.Scheduler = cc.Class.extend(/** @lends cc.Scheduler# */{
     /**
      * Resume selectors on a set of targets.<br/>
      * This can be useful for undoing a call to pauseAllCallbacks.
-     * @param {Array} targetsToResume
+     * @param {Array<any>} targetsToResume
      */
     resumeTargets:function (targetsToResume) {
         if (!targetsToResume)

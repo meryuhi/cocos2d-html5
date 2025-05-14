@@ -315,7 +315,7 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
             /**
              * draw a CatmullRom curve
              * @override
-             * @param {Array} points
+             * @param {Array<any>} points
              * @param {Number} segments
              * @param {Number} [lineWidth]
              * @param {cc.Color} [color]
@@ -327,7 +327,7 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
             /**
              * draw a cardinal spline path
              * @override
-             * @param {Array} config
+             * @param {Array<any>} config
              * @param {Number} tension
              * @param {Number} segments
              * @param {Number} [lineWidth]
@@ -390,7 +390,7 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
             /**
              * draws an array of points.
              * @override
-             * @param {Array} points point of array
+             * @param {Array<any>} points point of array
              * @param {Number} radius
              * @param {cc.Color} [color]
              */
@@ -427,7 +427,7 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
 
             /**
              * draw a polygon with a fill color and line color without copying the vertex list
-             * @param {Array} verts
+             * @param {Array<any>} verts
              * @param {cc.Color|null} fillColor Fill color or `null` for a hollow polygon.
              * @param {Number} [lineWidth]
              * @param {cc.Color} [color]
@@ -453,7 +453,7 @@ cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
 
             /**
              * draw a polygon with a fill color and line color, copying the vertex list
-             * @param {Array} verts
+             * @param {Array<any>} verts
              * @param {cc.Color|null} fillColor Fill color or `null` for a hollow polygon.
              * @param {Number} [lineWidth]
              * @param {cc.Color} [lineColor]

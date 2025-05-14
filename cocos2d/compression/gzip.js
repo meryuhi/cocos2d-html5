@@ -127,7 +127,7 @@ cc.Codec.GZip.border = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 1
 
 /**
  * gunzip
- * @return {Array}
+ * @return {Array<any>}
  */
 cc.Codec.GZip.prototype.gunzip = function () {
     this.outputArr = [];

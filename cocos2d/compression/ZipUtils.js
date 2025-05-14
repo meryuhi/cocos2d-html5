@@ -11,7 +11,7 @@ cc.Codec = {name:'Jacob__Codec'};
 
 /**
  * Unpack a gzipped byte array
- * @param {Array} input Byte array
+ * @param {Array<any>} input Byte array
  * @returns {String} Unpacked byte string
  */
 cc.unzip = function () {
@@ -32,7 +32,7 @@ cc.unzipBase64 = function () {
  * Unpack a gzipped byte string encoded as base64
  * @param {String} input Byte string encoded as base64
  * @param {Number} bytes Bytes per array item
- * @returns {Array} Unpacked byte array
+ * @returns {Array<any>} Unpacked byte array
  */
 cc.unzipBase64AsArray = function (input, bytes) {
     bytes = bytes || 1;
@@ -50,9 +50,9 @@ cc.unzipBase64AsArray = function (input, bytes) {
 
 /**
  * Unpack a gzipped byte array
- * @param {Array} input Byte array
+ * @param {Array<any>} input Byte array
  * @param {Number} bytes Bytes per array item
- * @returns {Array} Unpacked byte array
+ * @returns {Array<any>} Unpacked byte array
  */
 cc.unzipAsArray = function (input, bytes) {
     bytes = bytes || 1;
@@ -71,7 +71,7 @@ cc.unzipAsArray = function (input, bytes) {
 /**
  * string to array
  * @param {String} input
- * @returns {Array} array
+ * @returns {Array<any>} array
  */
 cc.StringToArray = function (input) {
     var tmp = input.split(","), ar = [], i;

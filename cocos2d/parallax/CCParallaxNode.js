@@ -118,7 +118,7 @@ cc.PointObject.create = function (ratio, offset) {
  * @class
  * @extends cc.Node
  *
- * @property {Array}    parallaxArray   - Parallax nodes array
+ * @property {Array<any>}    parallaxArray   - Parallax nodes array
  */
 cc.ParallaxNode = cc.Node.extend(/** @lends cc.ParallaxNode# */{
 	parallaxArray:null,
@@ -128,7 +128,7 @@ cc.ParallaxNode = cc.Node.extend(/** @lends cc.ParallaxNode# */{
 
     /**
      * Gets the parallax array.
-     * @return {Array}
+     * @return {Array<any>}
      */
     getParallaxArray:function () {
         return this.parallaxArray;
@@ -136,7 +136,7 @@ cc.ParallaxNode = cc.Node.extend(/** @lends cc.ParallaxNode# */{
 
     /**
      * Set parallax array.
-     * @param {Array} value
+     * @param {Array<any>} value
      */
     setParallaxArray:function (value) {
         this.parallaxArray = value;

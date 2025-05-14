@@ -218,7 +218,7 @@ cc._tmp.WebGLTexture2D = function () {
 
         /**
          * These functions are needed to create mutable textures
-         * @param {Array} data
+         * @param {Array<any>} data
          */
         releaseData: function (data) {
             data = null;
@@ -231,7 +231,7 @@ cc._tmp.WebGLTexture2D = function () {
 
         /**
          * Intializes with a texture2d with data
-         * @param {Array} data
+         * @param {Array<any>} data
          * @param {Number} pixelFormat
          * @param {Number} pixelsWide
          * @param {Number} pixelsHigh
@@ -551,7 +551,7 @@ cc._tmp.WebGLTexture2D = function () {
         /**
          * Initializes a texture from a PVRTC buffer
          * @note compatible to cocos2d-iphone interface.
-         * @param {Array} data
+         * @param {Array<any>} data
          * @param {Number} level
          * @param {Number} bpp
          * @param {Boolean} hasAlpha

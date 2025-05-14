@@ -1099,7 +1099,7 @@ cc.MenuItemImage.create = function (normalImage, selectedImage, three, four, fiv
  * @class
  * @extends cc.MenuItem
  *
- * @property {Array}    subItems        - Sub items
+ * @property {Array<any>}    subItems        - Sub items
  * @property {Number}   selectedIndex   - Index of selected sub item
  *
  *@example
@@ -1218,7 +1218,7 @@ cc.MenuItemToggle = cc.MenuItem.extend(/** @lends cc.MenuItemToggle# */{
 
     /**
      * similar to get children,return the sumItem array.
-     * @return {Array}
+     * @return {Array<any>}
      */
     getSubItems: function () {
         return this.subItems;

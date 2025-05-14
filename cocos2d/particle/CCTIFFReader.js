@@ -229,7 +229,7 @@ cc.tiffReader = /** @lends cc.tiffReader# */{
 
     /**
      * @function
-     * @param {Array} tiffData
+     * @param {Array<any>} tiffData
      * @param {HTMLCanvasElement} canvas
      * @returns {*}
      */

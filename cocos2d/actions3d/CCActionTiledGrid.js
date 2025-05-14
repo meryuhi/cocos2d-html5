@@ -311,7 +311,7 @@ cc.ShuffleTiles = cc.TiledGrid3DAction.extend(/** @lends cc.ShuffleTiles# */{
 
     /**
      * Shuffle
-     * @param {Array} array
+     * @param {Array<any>} array
      * @param {Number} len
      */
     shuffle:function (array, len) {
@@ -750,7 +750,7 @@ cc.TurnOffTiles = cc.TiledGrid3DAction.extend(/** @lends cc.TurnOffTiles# */{
 
     /**
      * Shuffle
-     * @param {Array} array
+     * @param {Array<any>} array
      * @param {Number} len
      */
     shuffle:function (array, len) {

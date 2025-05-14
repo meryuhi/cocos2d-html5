@@ -404,7 +404,7 @@ cc.EventTouch = cc.Event.extend(/** @lends cc.EventTouch# */{
 
     /**
      * Returns touches of event
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getTouches: function () {
         return this._touches;

@@ -37,8 +37,8 @@
 /**
  *  Converts an array of numbers into an array of vectors(x,y)
  *  @function
- *  @param {Array} verts
- *  @return {Array}
+ *  @param {Array<any>} verts
+ *  @return {Array<any>}
  */
 cc.__convertVerts = function (verts) {
     var ret = [];

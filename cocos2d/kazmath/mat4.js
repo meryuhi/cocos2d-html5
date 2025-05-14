@@ -52,7 +52,7 @@
 
     /**
      * Fills a cc.math.Matrix4 structure with the values from a 16 element array of floats
-     * @param {Array} scalarArr
+     * @param {Array<any>} scalarArr
      */
     proto.fill = function(scalarArr){        //cc.kmMat4Fill
          var mat = this.mat;

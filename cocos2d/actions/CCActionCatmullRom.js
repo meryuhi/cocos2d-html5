@@ -75,7 +75,7 @@ cc.cardinalSplineAt = function (p0, p1, p2, p3, tension, t, out) {
 /**
  * returns a new copy of the array reversed.
  *
- * @return {Array}
+ * @return {Array<any>}
  */
 cc.reverseControlPoints = function (controlPoints) {
     var newArray = [];
@@ -90,7 +90,7 @@ cc.reverseControlPoints = function (controlPoints) {
  * returns a new clone of the controlPoints
  *
  * @param controlPoints
- * @returns {Array}
+ * @returns {Array<any>}
  */
 cc.cloneControlPoints = function (controlPoints) {
     var newArray = [];
@@ -103,16 +103,16 @@ cc.cloneControlPoints = function (controlPoints) {
  * returns a new clone of the controlPoints
  * @deprecated since v3.0 please use cc.cloneControlPoints() instead.
  * @param controlPoints
- * @returns {Array}
+ * @returns {Array<any>}
  */
 cc.copyControlPoints = cc.cloneControlPoints;
 
 /**
  * returns a point from the array
  *
- * @param {Array} controlPoints
+ * @param {Array<any>} controlPoints
  * @param {Number} pos
- * @return {Array}
+ * @return {Array<any>}
  */
 cc.getControlPointAt = function (controlPoints, pos) {
     var p = Math.min(controlPoints.length - 1, Math.max(pos, 0));
@@ -142,7 +142,7 @@ cc.reverseControlPointsInline = function (controlPoints) {
  * @class
  * @extends cc.ActionInterval
  * @param {Number} duration
- * @param {Array} points array of control points
+ * @param {Array<any>} points array of control points
  * @param {Number} tension
  *
  * @example
@@ -161,7 +161,7 @@ cc.CardinalSplineTo = cc.ActionInterval.extend(/** @lends cc.CardinalSplineTo# *
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
 	 * Creates an action with a Cardinal Spline array of points and tension.
 	 * @param {Number} duration
-	 * @param {Array} points array of control points
+	 * @param {Array<any>} points array of control points
 	 * @param {Number} tension
 	 */
     ctor: function (duration, points, tension) {
@@ -175,7 +175,7 @@ cc.CardinalSplineTo = cc.ActionInterval.extend(/** @lends cc.CardinalSplineTo# *
      * initializes the action with a duration and an array of points
      *
      * @param {Number} duration
-     * @param {Array} points array of control points
+     * @param {Array<any>} points array of control points
      * @param {Number} tension
      *
      * @return {Boolean}
@@ -286,7 +286,7 @@ cc.CardinalSplineTo = cc.ActionInterval.extend(/** @lends cc.CardinalSplineTo# *
     /**
      * Points getter
      *
-     * @return {Array}
+     * @return {Array<any>}
      */
     getPoints:function () {
         return this._points;
@@ -295,7 +295,7 @@ cc.CardinalSplineTo = cc.ActionInterval.extend(/** @lends cc.CardinalSplineTo# *
     /**
      * Points setter
      *
-     * @param {Array} points
+     * @param {Array<any>} points
      */
     setPoints:function (points) {
         this._points = points;
@@ -307,7 +307,7 @@ cc.CardinalSplineTo = cc.ActionInterval.extend(/** @lends cc.CardinalSplineTo# *
  *
  * @function
  * @param {Number} duration
- * @param {Array} points array of control points
+ * @param {Array<any>} points array of control points
  * @param {Number} tension
  * @return {cc.CardinalSplineTo}
  *
@@ -325,7 +325,7 @@ cc.cardinalSplineTo = function (duration, points, tension) {
  *
  * @function
  * @param {Number} duration
- * @param {Array} points array of control points
+ * @param {Array<any>} points array of control points
  * @param {Number} tension
  * @return {cc.CardinalSplineTo}
  * @static
@@ -340,7 +340,7 @@ cc.CardinalSplineTo.create = cc.cardinalSplineTo;
  * @class
  * @extends cc.CardinalSplineTo
  * @param {Number} duration
- * @param {Array} points
+ * @param {Array<any>} points
  * @param {Number} tension
  *
  * @example
@@ -354,7 +354,7 @@ cc.CardinalSplineBy = cc.CardinalSplineTo.extend(/** @lends cc.CardinalSplineBy#
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
 	 * creates an action with a Cardinal Spline array of points and tension.
 	 * @param {Number} duration
-	 * @param {Array} points
+	 * @param {Array<any>} points
 	 * @param {Number} tension
 	 */
     ctor:function (duration, points, tension) {
@@ -447,7 +447,7 @@ cc.CardinalSplineBy = cc.CardinalSplineTo.extend(/** @lends cc.CardinalSplineBy#
  *
  * @function
  * @param {Number} duration
- * @param {Array} points
+ * @param {Array<any>} points
  * @param {Number} tension
  *
  * @return {cc.CardinalSplineBy}
@@ -461,7 +461,7 @@ cc.cardinalSplineBy = function (duration, points, tension) {
  * creates an action with a Cardinal Spline array of points and tension.
  * @function
  * @param {Number} duration
- * @param {Array} points
+ * @param {Array<any>} points
  * @param {Number} tension
  * @return {cc.CardinalSplineBy}
  * @static
@@ -478,7 +478,7 @@ cc.CardinalSplineBy.create = cc.cardinalSplineBy;
  * @class
  * @extends cc.CardinalSplineTo
  * @param {Number} dt
- * @param {Array} points
+ * @param {Array<any>} points
  *
  * @example
  * var action1 = cc.catmullRomTo(3, array);
@@ -489,7 +489,7 @@ cc.CatmullRomTo = cc.CardinalSplineTo.extend(/** @lends cc.CatmullRomTo# */{
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
 	 * creates an action with a Cardinal Spline array of points and tension.
 	 * @param {Number} dt
-	 * @param {Array} points
+	 * @param {Array<any>} points
 	 */
 	ctor: function(dt, points) {
 		points && this.initWithDuration(dt, points);
@@ -499,7 +499,7 @@ cc.CatmullRomTo = cc.CardinalSplineTo.extend(/** @lends cc.CatmullRomTo# */{
      * Initializes the action with a duration and an array of points
      *
      * @param {Number} dt
-     * @param {Array} points
+     * @param {Array<any>} points
      */
     initWithDuration:function (dt, points) {
         return cc.CardinalSplineTo.prototype.initWithDuration.call(this, dt, points, 0.5);
@@ -521,7 +521,7 @@ cc.CatmullRomTo = cc.CardinalSplineTo.extend(/** @lends cc.CatmullRomTo# */{
  *
  * @function
  * @param {Number} dt
- * @param {Array} points
+ * @param {Array<any>} points
  * @return {cc.CatmullRomTo}
  *
  * @example
@@ -535,7 +535,7 @@ cc.catmullRomTo = function (dt, points) {
  * creates an action with a Cardinal Spline array of points and tension.
  *
  * @param {Number} dt
- * @param {Array} points
+ * @param {Array<any>} points
  * @return {cc.CatmullRomTo}
  * @static
  * @deprecated since v3.0 please use cc.catmullRomTo(dt, points) instead.
@@ -551,7 +551,7 @@ cc.CatmullRomTo.create = cc.catmullRomTo;
  * @class
  * @extends cc.CardinalSplineBy
  * @param {Number} dt
- * @param {Array} points
+ * @param {Array<any>} points
  *
  * @example
  * var action1 = cc.catmullRomBy(3, array);
@@ -562,7 +562,7 @@ cc.CatmullRomBy = cc.CardinalSplineBy.extend({
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
 	 * Creates an action with a Cardinal Spline array of points and tension.
 	 * @param {Number} dt
-	 * @param {Array} points
+	 * @param {Array<any>} points
 	 */
 	ctor: function(dt, points) {
 		cc.CardinalSplineBy.prototype.ctor.call(this);
@@ -574,7 +574,7 @@ cc.CatmullRomBy = cc.CardinalSplineBy.extend({
      *
      * @function
      * @param {Number} dt
-     * @param {Array} points
+     * @param {Array<any>} points
      */
     initWithDuration:function (dt, points) {
         return cc.CardinalSplineTo.prototype.initWithDuration.call(this, dt, points, 0.5);
@@ -595,7 +595,7 @@ cc.CatmullRomBy = cc.CardinalSplineBy.extend({
  * Creates an action with a Cardinal Spline array of points and tension
  * @function
  * @param {Number} dt
- * @param {Array} points
+ * @param {Array<any>} points
  * @return {cc.CatmullRomBy}
  * @example
  * var action1 = cc.catmullRomBy(3, array);

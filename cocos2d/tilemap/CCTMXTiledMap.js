@@ -101,9 +101,9 @@ cc.TMX_ORIENTATION_ISO = 2;
  * @param {String} resourcePath   If tmxFile is a file name ,it is not required.If tmxFile is content string ,it is must required.
 
  *
- * @property {Array}    properties      - Properties from the map. They can be added using tilemap editors
+ * @property {Array<any>}    properties      - Properties from the map. They can be added using tilemap editors
  * @property {Number}   mapOrientation  - Map orientation
- * @property {Array}    objectGroups    - Object groups of the map
+ * @property {Array<any>}    objectGroups    - Object groups of the map
  * @property {Number}   mapWidth        - Width of the map
  * @property {Number}   mapHeight       - Height of the map
  * @property {Number}   tileWidth       - Width of a tile
@@ -229,7 +229,7 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
 
     /**
      * object groups
-     * @return {Array}
+     * @return {Array<any>}
      */
     getObjectGroups:function () {
         return this.objectGroups;
@@ -237,7 +237,7 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
 
     /**
      * object groups
-     * @param {Array} Var
+     * @param {Array<any>} Var
      */
     setObjectGroups:function (Var) {
         this.objectGroups = Var;
@@ -330,7 +330,7 @@ cc.TMXTiledMap = cc.Node.extend(/** @lends cc.TMXTiledMap# */{
 
     /**
      * Return All layers array.
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     allLayers: function () {
         var retArr = [], locChildren = this._children;

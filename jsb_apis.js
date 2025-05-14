@@ -118,7 +118,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
     /**
      * @function getValueVectorFromFile
      * @param {String} arg0
-     * @return {Array}
+     * @return {Array<any>}
      */
     getValueVectorFromFile : function (str)
     {
@@ -127,7 +127,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
 
     /**
      * @function getSearchPaths
-     * @return {Array}
+     * @return {Array<any>}
      */
     getSearchPaths : function ()
     {
@@ -177,7 +177,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
 
     /**
      * @function setSearchPaths
-     * @param {Array} arg0
+     * @param {Array<any>} arg0
      */
     setSearchPaths : function (array)
     {
@@ -196,7 +196,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
 
     /**
      * @function setSearchResolutionsOrder
-     * @param {Array} arg0
+     * @param {Array<any>} arg0
      */
     setSearchResolutionsOrder : function (array)
     {
@@ -258,7 +258,7 @@ jsb.fileUtils = /** @lends jsb.fileUtils# */{
 
     /**
      * @function getSearchResolutionsOrder
-     * @return {Array}
+     * @return {Array<any>}
      */
     getSearchResolutionsOrder : function ()
     {

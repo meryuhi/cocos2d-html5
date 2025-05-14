@@ -1343,7 +1343,7 @@
    * Return array of callbacks for `event`.
    *
    * @param {String} event
-   * @return {Array}
+   * @return {Array<any>}
    * @api public
    */
 
@@ -2214,7 +2214,7 @@
     /**
      * Filters upgrades, returning only those matching client transports.
      *
-     * @param {Array} server upgrades
+     * @param {Array<any>} server upgrades
      * @api private
      *
      */
@@ -2334,7 +2334,7 @@
   /**
    * Sends multiple packets.
    *
-   * @param {Array} packets
+   * @param {Array<any>} packets
    * @api private
    */
 
@@ -3263,7 +3263,7 @@
   /**
    * Writes a packets payload.
    *
-   * @param {Array} data packets
+   * @param {Array<any>} data packets
    * @param {Function} drain callback
    * @api private
    */
@@ -3457,7 +3457,7 @@
   /**
    * Writes data to socket.
    *
-   * @param {Array} array of packets.
+   * @param {Array<any>} array of packets.
    * @api private
    */
 
@@ -4356,7 +4356,7 @@
      * If any contents are binary, they will be encoded as base64 strings. Base64
      * encoded strings are marked with a b before the length specifier
      *
-     * @param {Array} packets
+     * @param {Array<any>} packets
      * @api private
      */
 
@@ -4494,7 +4494,7 @@
      * Example:
      * 1 3 255 1 2 3, if the binary contents are interpreted as 8 bit integers
      *
-     * @param {Array} packets
+     * @param {Array<any>} packets
      * @return {ArrayBuffer} encoded payload
      * @api private
      */
@@ -4668,7 +4668,7 @@
   /**
    * Gets the keys for an object.
    *
-   * @return {Array} keys
+   * @return {Array<any>} keys
    * @api private
    */
 
@@ -5053,7 +5053,7 @@
           return continuationByte & 0x3F;
         }
 
-        // If we end up here, it¡¯s not a continuation byte
+        // If we end up here, itï¿½ï¿½s not a continuation byte
         throw Error('Invalid continuation byte');
       }
 
@@ -5312,7 +5312,7 @@
    * See: https://github.com/einaros/ws/issues/227
    *
    * @param {String} uri
-   * @param {Array} protocols (optional)
+   * @param {Array<any>} protocols (optional)
    * @param {Object) opts (optional)
    * @api public
    */
@@ -5451,7 +5451,7 @@
    * Return own keys in `obj`.
    *
    * @param {Object} obj
-   * @return {Array}
+   * @return {Array<any>}
    * @api public
    */
 
@@ -5469,7 +5469,7 @@
    * Return own values in `obj`.
    *
    * @param {Object} obj
-   * @return {Array}
+   * @return {Array<any>}
    * @api public
    */
 
@@ -5609,7 +5609,7 @@
      * Reconstructs a binary packet from its placeholder packet and buffers
      *
      * @param {Object} packet - event packet with placeholders
-     * @param {Array} buffers - binary buffers to put in placeholder positions
+     * @param {Array<any>} buffers - binary buffers to put in placeholder positions
      * @return {Object} reconstructed packet
      * @api public
      */

@@ -35,7 +35,7 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
 
     /**
      * Parses the triggers.
-     * @param {Array} triggers
+     * @param {Array<any>} triggers
      */
     parse: function (triggers) {
         for (var i = 0; i < triggers.length; ++i) {
@@ -54,7 +54,7 @@ ccs.triggerManager = /** @lends ccs.triggerManager# */{
     /**
      * Returns the event triggers by event id.
      * @param {Number} event
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     get: function (event) {
         return this._eventTriggers[event];

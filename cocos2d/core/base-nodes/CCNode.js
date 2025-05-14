@@ -113,7 +113,7 @@ cc.s_globalOrderOfArrival = 1;
  * @property {Number}               opacity             - Opacity of node, default value is 255
  * @property {Boolean}              opacityModifyRGB    - Indicate whether opacity affect the color value, default value is false
  * @property {Boolean}              cascadeOpacity      - Indicate whether node's opacity value affect its child nodes, default value is false
- * @property {Array}                children            - <@readonly> All children nodes
+ * @property {Array<any>}                children            - <@readonly> All children nodes
  * @property {Number}               childrenCount       - <@readonly> Number of children
  * @property {cc.Node}              parent              - Parent node
  * @property {Boolean}              running             - <@readonly> Indicate whether node is running or not
@@ -682,7 +682,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
      * Returns an array of all children  <br/>
      * Composing a "tree" structure is a very important feature of CCNode
      * @function
-     * @return {Array} An array of children
+     * @return {Array<any>} An array of children
      * @example
      *  //This sample code traverses all children nodes, and set their position to (0,0)
      *  var allChildren = parent.getChildren();

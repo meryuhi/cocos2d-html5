@@ -333,7 +333,7 @@ ccui.ListView = ccui.ScrollView.extend(/** @lends ccui.ListView# */{
 
     /**
      * Returns the item container.
-     * @returns {Array}
+     * @returns {Array<any>}
      */
     getItems: function () {
         return this._items;

@@ -29,7 +29,7 @@
  * @class
  * @extends cc.Class
  *
- * @property {Array}    properties  - Properties from the group. They can be added using tilemap editors
+ * @property {Array<any>}    properties  - Properties from the group. They can be added using tilemap editors
  * @property {String}   groupName   - Name of the group
  */
 cc.TMXObjectGroup = cc.Class.extend(/** @lends cc.TMXObjectGroup# */{
@@ -70,7 +70,7 @@ cc.TMXObjectGroup = cc.Class.extend(/** @lends cc.TMXObjectGroup# */{
 
     /**
      * List of properties stored in a dictionary
-     * @return {Array}
+     * @return {Array<any>}
      */
     getProperties:function () {
         return this.properties;
@@ -141,7 +141,7 @@ cc.TMXObjectGroup = cc.Class.extend(/** @lends cc.TMXObjectGroup# */{
 
     /**
      * Gets the objects.
-     * @return {Array}
+     * @return {Array<any>}
      */
     getObjects:function () {
         return this._objects;

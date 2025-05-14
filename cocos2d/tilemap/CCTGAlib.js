@@ -67,7 +67,7 @@ cc.TGA_ERROR_COMPRESSED_FILE = 5;
  * @param {Number} pixelDepth
  * @param {Number} width map width
  * @param {Number} height map height
- * @param {Array} imageData raw data
+ * @param {Array<any>} imageData raw data
  * @param {Number} flipped
  * @constructor
  */
@@ -83,7 +83,7 @@ cc.ImageTGA = function (status, type, pixelDepth, width, height, imageData, flip
 
 /**
  * load the image header field from stream. We only keep those that matter!
- * @param {Array} buffer
+ * @param {Array<any>} buffer
  * @param {Number} bufSize
  * @param {cc.ImageTGA} psInfo
  * @return {Boolean}
@@ -119,7 +119,7 @@ cc.tgaLoadHeader = function (buffer, bufSize, psInfo) {
 
 /**
  * loads the image pixels. You shouldn't call this function directly.
- * @param {Array} buffer
+ * @param {Array<any>} buffer
  * @param {Number} bufSize
  * @param {cc.ImageTGA} psInfo
  * @return {Boolean}

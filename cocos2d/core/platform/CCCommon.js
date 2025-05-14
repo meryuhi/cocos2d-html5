@@ -222,7 +222,7 @@ cc.FMT_UNKNOWN = 5;
 /**
  * get image format by image data
  * @function
- * @param {Array} imgData
+ * @param {Array<any>} imgData
  * @returns {Number}
  */
 cc.getImageFormatByData = function (imgData) {

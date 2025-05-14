@@ -101,7 +101,7 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
 
     /**
      * draws an array of points.
-     * @param {Array} points point of array
+     * @param {Array<any>} points point of array
      * @param {Number} numberOfPoints
      */
     drawPoints:function (points, numberOfPoints) {
@@ -193,7 +193,7 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
 
     /**
      * draws a polygon given a pointer to cc.Point coordiantes and the number of vertices measured in points.
-     * @param {Array} vertices a pointer to cc.Point coordiantes
+     * @param {Array<any>} vertices a pointer to cc.Point coordiantes
      * @param {Number} numOfVertices the number of vertices measured in points
      * @param {Boolean} closePolygon The polygon can be closed or open
      */
@@ -222,7 +222,7 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
 
     /**
      * draws a solid polygon given a pointer to CGPoint coordiantes, the number of vertices measured in points, and a color.
-     * @param {Array} poli
+     * @param {Array<any>} poli
      * @param {Number} numberOfPoints
      * @param {cc.Color} color
      */
@@ -374,7 +374,7 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
 
     /**
      * draw a catmull rom line
-     * @param {Array} points
+     * @param {Array<any>} points
      * @param {Number} segments
      */
     drawCatmullRom:function (points, segments) {
@@ -383,7 +383,7 @@ cc.DrawingPrimitiveWebGL = cc.Class.extend(/** @lends cc.DrawingPrimitiveWebGL# 
 
     /**
      * draw a cardinal spline path
-     * @param {Array} config
+     * @param {Array<any>} config
      * @param {Number} tension
      * @param {Number} segments
      */

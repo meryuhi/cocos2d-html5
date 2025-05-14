@@ -64,7 +64,7 @@ core4cc.getKeyName = function(name){
 /**
  * Desc: Returns array for dependencies.
  * @param temp
- * @returns {Array}
+ * @returns {Array<any>}
  * @private
  */
 core4cc.getDependencies = function(temp){

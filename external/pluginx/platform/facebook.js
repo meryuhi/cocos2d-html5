@@ -146,7 +146,7 @@ plugin.extend('facebook', {
     /**
      * Login to facebook
      * @param {Function} callback
-     * @param {Array} permissions
+     * @param {Array<any>} permissions
      * @example
      * //example
      * plugin.FacebookAgent.login();

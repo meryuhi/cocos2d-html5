@@ -134,7 +134,7 @@ cc.textureCache = /** @lends cc.textureCache# */{
 
     /**
      * @param {Image} texture
-     * @return {Array}
+     * @return {Array<any>}
      * @example
      * //example
      * var cacheTextureForColor = cc.textureCache.getTextureColors(texture);

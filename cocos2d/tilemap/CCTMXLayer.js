@@ -45,10 +45,10 @@
  * @class
  * @extends cc.SpriteBatchNode
  *
- * @property {Array}                tiles               - Tiles for layer
+ * @property {Array<any>}                tiles               - Tiles for layer
  * @property {cc.TMXTilesetInfo}    tileset             - Tileset for layer
  * @property {Number}               layerOrientation    - Layer orientation
- * @property {Array}                properties          - Properties from the layer. They can be added using tilemap editors
+ * @property {Array<any>}                properties          - Properties from the layer. They can be added using tilemap editors
  * @property {String}               layerName           - Name of the layer
  * @property {Number}               layerWidth          - Width of the layer
  * @property {Number}               layerHeight         - Height of the layer
@@ -283,7 +283,7 @@ cc.TMXLayer = cc.SpriteBatchNode.extend(/** @lends cc.TMXLayer# */{
 
     /**
      * Pointer to the map of tiles
-     * @return {Array}
+     * @return {Array<any>}
      */
     getTiles:function () {
         return this.tiles;
@@ -291,7 +291,7 @@ cc.TMXLayer = cc.SpriteBatchNode.extend(/** @lends cc.TMXLayer# */{
 
     /**
      * Pointer to the map of tiles
-     * @param {Array} Var
+     * @param {Array<any>} Var
      */
     setTiles:function (Var) {
         this.tiles = Var;
@@ -331,7 +331,7 @@ cc.TMXLayer = cc.SpriteBatchNode.extend(/** @lends cc.TMXLayer# */{
 
     /**
      * properties from the layer. They can be added using Tiled
-     * @return {Array}
+     * @return {Array<any>}
      */
     getProperties:function () {
         return this.properties;
@@ -339,7 +339,7 @@ cc.TMXLayer = cc.SpriteBatchNode.extend(/** @lends cc.TMXLayer# */{
 
     /**
      * properties from the layer. They can be added using Tiled
-     * @param {Array} Var
+     * @param {Array<any>} Var
      */
     setProperties:function (Var) {
         this.properties = Var;

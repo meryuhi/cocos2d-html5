@@ -133,7 +133,7 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
 
     /**
      * initializes a cc.Menu with it's items
-     * @param {Array} args
+     * @param {Array<any>} args
      * @return {Boolean}
      */
     initWithItems: function (args) {
@@ -150,7 +150,7 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
 
     /**
      * initializes a cc.Menu with a Array of cc.MenuItem objects
-     * @param {Array} arrayOfItems array Of cc.MenuItem Items
+     * @param {Array<any>} arrayOfItems array Of cc.MenuItem Items
      * @return {Boolean}
      */
     initWithArray: function (arrayOfItems) {

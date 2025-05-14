@@ -40,7 +40,7 @@
  * @property {Image}    texture         - Image texture for cc.TextureAtlas.
  * @property {Number}   capacity        - <@readonly> Quantity of quads that can be stored with the current texture atlas size.
  * @property {Number}   totalQuads      - <@readonly> Quantity of quads that are going to be drawn.
- * @property {Array}    quads           - <@readonly> Quads that are going to be rendered
+ * @property {Array<any>}    quads           - <@readonly> Quads that are going to be rendered
  */
 cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
     dirty: false,
@@ -131,14 +131,14 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
 
     /**
      * Quads that are going to be rendered
-     * @return {Array}
+     * @return {Array<any>}
      */
     getQuads: function () {
         return this._quads;
     },
 
     /**
-     * @param {Array} quads
+     * @param {Array<any>} quads
      */
     setQuads: function (quads) {
         //TODO need re-binding
@@ -332,7 +332,7 @@ cc.TextureAtlas = cc.Class.extend(/** @lends cc.TextureAtlas# */{  //WebGL only
      *      index must be between 0 and the atlas capacity - 1                                    <br />
      *      this method doesn't enlarge the array when amount + index > totalQuads                <br />
      * </p>
-     * @param {Array} quads
+     * @param {Array<any>} quads
      * @param {Number} index
      * @param {Number} amount
      */

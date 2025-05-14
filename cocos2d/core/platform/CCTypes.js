@@ -143,7 +143,7 @@ cc.Acceleration = function (x, y, z, timestamp) {
  * @class cc.Vertex2F
  * @param {Number} x
  * @param {Number}y
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number}offset
  * @constructor
  */
@@ -186,7 +186,7 @@ cc.defineGetterSetter(_p, "y", _p._getY, _p._setY);
  * @param {Number} x
  * @param {Number} y
  * @param {Number}z
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -239,7 +239,7 @@ cc.defineGetterSetter(_p, "z", _p._getZ, _p._setZ);
  * @class cc.Tex2F
  * @param {Number} u
  * @param {Number} v
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -283,7 +283,7 @@ cc.defineGetterSetter(_p, "v", _p._getV, _p._setV);
  * @param {cc.Vertex2F} tr
  * @param {cc.Vertex2F} bl
  * @param {cc.Vertex2F} br
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -382,7 +382,7 @@ cc.Quad3.BYTES_PER_ELEMENT = 48;
  * @param {cc.Vertex3F} vertices
  * @param {cc.Color} colors
  * @param {cc.Tex2F} texCoords
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -451,7 +451,7 @@ cc.defineGetterSetter(_p, "texCoords", _p._getTexCoords, _p._setTexCoords);
  * @param {cc.V3F_C4B_T2F} bl
  * @param {cc.V3F_C4B_T2F} tr
  * @param {cc.V3F_C4B_T2F} br
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -579,8 +579,8 @@ cc.V3F_C4B_T2F_QuadCopy = function (sourceQuad) {
 
 /**
  * @function
- * @param {Array} sourceQuads
- * @returns {Array}
+ * @param {Array<any>} sourceQuads
+ * @returns {Array<any>}
  */
 cc.V3F_C4B_T2F_QuadsCopy = function (sourceQuads) {
     if (!sourceQuads)
@@ -599,7 +599,7 @@ cc.V3F_C4B_T2F_QuadsCopy = function (sourceQuads) {
  * @param {cc.Vertex2F} vertices
  * @param {cc.Color} colors
  * @param {cc.Tex2F} texCoords
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */
@@ -665,7 +665,7 @@ cc.defineGetterSetter(_p, "texCoords", _p._getTexCoords, _p._setTexCoords);
  * @param {cc.V2F_C4B_T2F} a
  * @param {cc.V2F_C4B_T2F} b
  * @param {cc.V2F_C4B_T2F} c
- * @param {Array} arrayBuffer
+ * @param {Array<any>} arrayBuffer
  * @param {Number} offset
  * @constructor
  */

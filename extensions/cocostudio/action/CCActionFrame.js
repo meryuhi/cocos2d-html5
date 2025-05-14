@@ -263,7 +263,7 @@ ccs.ActionFrame = ccs.Class.extend(/** @lends ccs.ActionFrame# */{
 
     /**
      * Sets the easing parameter to action frame.
-     * @param {Array} parameter
+     * @param {Array<any>} parameter
      */
     setEasingParameter: function(parameter){
         this._Parameter = [];

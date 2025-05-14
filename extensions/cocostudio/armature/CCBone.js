@@ -37,7 +37,7 @@
  * @property {ccs.Armature}         armature                - The armature
  * @property {ccs.Bone}             parentBone              - The parent bone
  * @property {ccs.Armature}         childArmature           - The child armature
- * @property {Array}                childrenBone            - <@readonly> All children bones
+ * @property {Array<any>}                childrenBone            - <@readonly> All children bones
  * @property {ccs.Tween}            tween                   - <@readonly> Tween
  * @property {ccs.FrameData}        tweenData               - <@readonly> The tween data
  * @property {ccs.ColliderFilter}   colliderFilter          - The collider filter
@@ -583,7 +583,7 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
 
     /**
      * Returns the children of ccs.Bone
-     * @return {Array}
+     * @return {Array<any>}
      * @deprecated since v3.0, please use getChildren instead.
      */
     getChildrenBone: function () {
