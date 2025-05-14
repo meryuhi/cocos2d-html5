@@ -42,11 +42,17 @@ var ASSERT_FAIL_UNEXPECTED_PROPERTYTYPE = function (propertyName) {
     cc.log("Unexpected property type: '" + propertyName + "'!");
 };
 
+/**
+ * @class
+ */
 function BlockData(selMenuHander, target) {
     this.selMenuHander = selMenuHander;
     this.target = target;
 }
 
+/**
+ * @class
+ */
 function BlockCCControlData(selCCControlHandler, target, controlEvents) {
     this.selCCControlHandler = selCCControlHandler;
     this.target = target;
