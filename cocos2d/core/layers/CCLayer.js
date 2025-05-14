@@ -135,7 +135,7 @@ cc.Layer = cc.Node.extend(/** @lends cc.Layer# */{
  * Creates a layer
  * @deprecated since v3.0, please use the new construction instead
  * @see cc.Layer
- * @return {cc.Layer|Null}
+ * @return {cc.Layer}
  */
 cc.Layer.create = function () {
     return new cc.Layer();
@@ -649,7 +649,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
  * @param {cc.Color} start starting color
  * @param {cc.Color} end ending color
  * @param {cc.Point|Null} v
- * @param {Array<any>|NULL} stops
+ * @param {Array<any>|Null} stops
  * @return {cc.LayerGradient}
  */
 cc.LayerGradient.create = function (start, end, v, stops) {
