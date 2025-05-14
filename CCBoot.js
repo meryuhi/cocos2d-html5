@@ -690,7 +690,7 @@ cc.loader = (function () {
          * If the third parameter doesn't exist, then the baseDir turns to be "".
          *
          * @param {string} [baseDir]   The pre path for jsList or the list of js path.
-         * @param {array} jsList    List of js path.
+         * @param {array} [jsList]    List of js path.
          * @param {function} [cb]  Callback function
          * @returns {*}
          */
@@ -713,7 +713,7 @@ cc.loader = (function () {
          * Load js width loading image.
          *
          * @param {string} [baseDir]
-         * @param {array} jsList
+         * @param {array} [jsList]
          * @param {function} [cb]
          */
         loadJsWithImg: function (baseDir, jsList, cb) {
@@ -945,7 +945,8 @@ cc.loader = (function () {
          * Load a single image.
          * @param {!string} url
          * @param {object} [option]
-         * @param {function} callback
+         * @param {function} [callback]
+         * @param {HTMLImageElement} [img]
          * @returns {Image}
          */
         loadImg: function (url, option, callback, img) {
