@@ -351,8 +351,8 @@ cc.defineGetterSetter(_p, "br", _p._getBR, _p._setBR);
 
 /**
  * A 3D Quad. 4 * 3 floats
- * @Class cc.Quad3
- * @Construct
+ * @class cc.Quad3
+ * @construct
  * @param {cc.Vertex3F} bl
  * @param {cc.Vertex3F} br
  * @param {cc.Vertex3F} tl
@@ -763,8 +763,8 @@ cc.tex2 = function (u, v) {
 
 /**
  * Blend Function used for textures
- * @Class cc.BlendFunc
- * @Constructor
+ * @class cc.BlendFunc
+ * @constructor
  * @param {Number} src1 source blend function
  * @param {Number} dst1 destination blend function
  */

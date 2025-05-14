@@ -48,8 +48,8 @@
 
 /**
  * Structure that contains the values of each particle
- * @Class
- * @Construct
+ * @class
+ * @construct
  * @param {cc.Point} [pos=cc.p(0,0)] Position of particle
  * @param {cc.Point} [startPos=cc.p(0,0)]
  * @param {cc.Color} [color= cc.color(0, 0, 0, 255)]
@@ -82,8 +82,8 @@ cc.Particle = function (pos, startPos, color, deltaColor, size, deltaSize, rotat
 
 /**
  * Mode A: gravity, direction, radial accel, tangential accel
- * @Class
- * @Construct
+ * @class
+ * @construct
  * @param {cc.Point} dir direction of particle
  * @param {Number} radialAccel
  * @param {Number} tangentialAccel
@@ -96,8 +96,8 @@ cc.Particle.ModeA = function (dir, radialAccel, tangentialAccel) {
 
 /**
  * Mode B: radius mode
- * @Class
- * @Construct
+ * @class
+ * @construct
  * @param {Number} angle
  * @param {Number} degreesPerSecond
  * @param {Number} radius
@@ -2176,8 +2176,8 @@ cc.ParticleSystem.createWithTotalParticles = cc.ParticleSystem.create;
 // Different modes
 /**
  * Mode A:Gravity + Tangential Accel + Radial Accel
- * @Class
- * @Construct
+ * @class
+ * @construct
  * @param {cc.Point} [gravity=] Gravity value.
  * @param {Number} [speed=0] speed of each particle.
  * @param {Number} [speedVar=0] speed variance of each particle.
@@ -2208,8 +2208,8 @@ cc.ParticleSystem.ModeA = function (gravity, speed, speedVar, tangentialAccel, t
 
 /**
  * Mode B: circular movement (gravity, radial accel and tangential accel don't are not used in this mode)
- * @Class
- * @Construct
+ * @class
+ * @construct
  * @param {Number} [startRadius=0] The starting radius of the particles.
  * @param {Number} [startRadiusVar=0] The starting radius variance of the particles.
  * @param {Number} [endRadius=0] The ending radius of the particles.

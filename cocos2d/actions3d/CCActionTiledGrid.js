@@ -250,7 +250,7 @@ cc.ShatteredTiles3D.create = cc.shatteredTiles3D;
 
 /**
  * A Tile composed of position, startPosition and delta.
- * @Class
+ * @class
  * @constructor
  * @param {cc.Point} [position=cc.p(0,0)]
  * @param {cc.Point} [startPosition=cc.p(0,0)]
