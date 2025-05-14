@@ -203,6 +203,9 @@ cc.Audio.touchStart = function () {
     }
 };
 
+/**
+ * @class
+ */
 cc.Audio.WebAudio = function (buffer) {
     this.buffer = buffer;
     this.context = cc.Audio._context;

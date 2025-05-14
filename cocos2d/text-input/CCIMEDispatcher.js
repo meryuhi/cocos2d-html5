@@ -25,6 +25,7 @@
  ****************************************************************************/
 
 /**
+ * @class
  * IME Keyboard Notification Info structure
  * @param {cc.Rect} begin the soft keyboard rectangle when animatin begin
  * @param {cc.Rect} end the soft keyboard rectangle when animatin end

@@ -5,6 +5,7 @@
  --*/
 
 /**
+ * @class
  * See cc.Codec.GZip.gunzip.
  * @param {Array | String} data The bytestream to decompress
  * Constructor
