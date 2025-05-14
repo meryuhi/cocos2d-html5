@@ -1796,8 +1796,8 @@ cc.JumpBy = cc.ActionInterval.extend(/** @lends cc.JumpBy# */{
      * @param {Number} duration
      * @param {cc.Point|Number} position
      * @param {Number} [y]
-     * @param {Number} height
-     * @param {Number} jumps
+     * @param {Number} [height]
+     * @param {Number} [jumps]
      */
     ctor: function (duration, position, y, height, jumps) {
         cc.ActionInterval.prototype.ctor.call(this);
@@ -1812,8 +1812,8 @@ cc.JumpBy = cc.ActionInterval.extend(/** @lends cc.JumpBy# */{
      * @param {Number} duration
      * @param {cc.Point|Number} position
      * @param {Number} [y]
-     * @param {Number} height
-     * @param {Number} jumps
+     * @param {Number} [height]
+     * @param {Number} [jumps]
      * @return {Boolean}
      * @example
      * actionBy.initWithDuration(2, cc.p(300, 0), 50, 4);
@@ -1911,8 +1911,8 @@ cc.JumpBy = cc.ActionInterval.extend(/** @lends cc.JumpBy# */{
  * @param {Number} duration
  * @param {cc.Point|Number} position
  * @param {Number} [y]
- * @param {Number} height
- * @param {Number} jumps
+ * @param {Number} [height]
+ * @param {Number} [jumps]
  * @return {cc.JumpBy}
  * @example
  * // example
@@ -1959,8 +1959,8 @@ cc.JumpTo = cc.JumpBy.extend(/** @lends cc.JumpTo# */{
      * @param {Number} duration
      * @param {cc.Point|Number} position
      * @param {Number} [y]
-     * @param {Number} height
-     * @param {Number} jumps
+     * @param {Number} [height]
+     * @param {Number} [jumps]
      */
     ctor: function (duration, position, y, height, jumps) {
         cc.JumpBy.prototype.ctor.call(this);
@@ -1973,8 +1973,8 @@ cc.JumpTo = cc.JumpBy.extend(/** @lends cc.JumpTo# */{
      * @param {Number} duration
      * @param {cc.Point|Number} position
      * @param {Number} [y]
-     * @param {Number} height
-     * @param {Number} jumps
+     * @param {Number} [height]
+     * @param {Number} [jumps]
      * @return {Boolean}
      * @example
      * actionTo.initWithDuration(2, cc.p(300, 0), 50, 4);
@@ -2021,8 +2021,8 @@ cc.JumpTo = cc.JumpBy.extend(/** @lends cc.JumpTo# */{
  * @param {Number} duration
  * @param {cc.Point|Number} position
  * @param {Number} [y]
- * @param {Number} height
- * @param {Number} jumps
+ * @param {Number} [height]
+ * @param {Number} [jumps]
  * @return {cc.JumpTo}
  * @example
  * // example

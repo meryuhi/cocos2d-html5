@@ -50,7 +50,7 @@ cc.GridBase = cc.Class.extend(/** @lends cc.GridBase# */{
      * @param {cc.Size} gridSize
      * @param {cc.Texture2D} [texture=]
      * @param {Boolean} [flipped=]
-     * @param {cc.Rect} rect
+     * @param {cc.Rect} [rect=]
      */
     ctor: function (gridSize, texture, flipped, rect) {
         cc.sys._checkWebGLRenderMode();
@@ -602,6 +602,7 @@ cc.TiledGrid3D = cc.GridBase.extend(/** @lends cc.TiledGrid3D# */{
      * @param {cc.Size} gridSize
      * @param {cc.Texture2D} [texture=]
      * @param {Boolean} [flipped=]
+     * @param {cc.Rect} [rect=]
      */
     ctor: function (gridSize, texture, flipped, rect) {
         cc.GridBase.prototype.ctor.call(this);
