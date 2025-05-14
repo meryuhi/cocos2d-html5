@@ -515,7 +515,7 @@ ccui.Layout = ccui.Widget.extend(/** @lends ccui.Layout# */{
     /**
      * Sets a background image for layout
      * @param {String} fileName
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     setBackGroundImage: function (fileName, texType) {
         if (!fileName)

@@ -43,7 +43,7 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
      * allocates and initializes a ccui.ImageView.
      * Constructor of ccui.ImageView, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
      * @param {String} imageFileName
-     * @param {Number} [texType==ccui.Widget.LOCAL_TEXTURE]
+     * @param {Number} [texType=ccui.Widget.LOCAL_TEXTURE]
      * @example
      * // example
      * var uiImageView = new ccui.ImageView;
@@ -71,7 +71,7 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
     /**
      * Loads textures for button.
      * @param {String} fileName
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTexture: function (fileName, texType) {
         if (!fileName || (this._textureFile == fileName && this._imageTexType == texType)) {
@@ -294,7 +294,7 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
  * Allocates and initializes a UIImageView.
  * @deprecated since v3.0, please use new ccui.ImageView() instead.
  * @param {string} imageFileName
- * @param {Number} texType
+ * @param {Number} [texType=ccui.Widget.LOCAL_TEXTURE]
  * @return {ccui.ImageView}
  */
 ccui.ImageView.create = function (imageFileName, texType) {

@@ -116,7 +116,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     /**
      * Loads texture for slider bar.
      * @param {String} fileName
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadBarTexture: function (fileName, texType) {
         if (!fileName) {
@@ -158,7 +158,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     /**
      * Loads dark state texture for slider progress bar.
      * @param {String} fileName
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadProgressBarTexture: function (fileName, texType) {
         if (!fileName) {
@@ -318,7 +318,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
      * @param {String} normal
      * @param {String} pressed
      * @param {String} disabled
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadSlidBallTextures: function (normal, pressed, disabled, texType) {
         this.loadSlidBallTextureNormal(normal, texType);
@@ -329,7 +329,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     /**
      * Loads normal state texture for slider ball.
      * @param {String} normal
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadSlidBallTextureNormal: function (normal, texType) {
         if (!normal) {
@@ -365,7 +365,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     /**
      * Loads selected state texture for slider ball.
      * @param {String} pressed
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadSlidBallTexturePressed: function (pressed, texType) {
         if (!pressed) {
@@ -401,7 +401,7 @@ ccui.Slider = ccui.Widget.extend(/** @lends ccui.Slider# */{
     /**
      * Load dark state texture for slider ball.
      * @param {String} disabled
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadSlidBallTextureDisabled: function (disabled, texType) {
         if (!disabled) {

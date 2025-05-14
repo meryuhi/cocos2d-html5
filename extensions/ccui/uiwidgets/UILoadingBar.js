@@ -113,7 +113,7 @@ ccui.LoadingBar = ccui.Widget.extend(/** @lends ccui.LoadingBar# */{
     /**
      * Loads texture for LoadingBar.
      * @param {String} texture
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTexture: function (texture, texType) {
         if (!texture)

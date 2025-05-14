@@ -194,7 +194,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
      * @param {String} normal normal state of texture's filename.
      * @param {String} selected  selected state of texture's filename.
      * @param {String} disabled  disabled state of texture's filename.
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextures: function (normal, selected, disabled, texType) {
         this.loadTextureNormal(normal, texType);
@@ -229,7 +229,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
     /**
      * Load normal state texture for button.
      * @param {String} normal normal state of texture's filename.
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureNormal: function (normal, texType) {
         if (!normal) return;
@@ -295,7 +295,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
     /**
      * Load selected state texture for button.
      * @param {String} selected selected state of texture's filename.
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTexturePressed: function (selected, texType) {
         if (!selected)
@@ -338,7 +338,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
     /**
      * Load dark state texture for button.
      * @param {String} disabled disabled state of texture's filename.
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureDisabled: function (disabled, texType) {
         if (!disabled)
@@ -810,7 +810,7 @@ _p = null;
  * @param {string} [normalImage]    normal state texture name
  * @param {string} [selectedImage]  selected state texture name
  * @param {string} [disableImage]   disabled state texture name
- * @param {string} [texType]
+ * @param {string} [texType=ccui.Widget.LOCAL_TEXTURE]
  * @return {ccui.Button}
  */
 ccui.Button.create = function (normalImage, selectedImage, disableImage, texType) {

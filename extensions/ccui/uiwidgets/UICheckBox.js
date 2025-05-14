@@ -129,7 +129,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
      * @param {String} cross
      * @param {String} backGroundDisabled
      * @param {String} frontCrossDisabled
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextures: function (backGround, backGroundSelected, cross, backGroundDisabled, frontCrossDisabled, texType) {
         backGround && this.loadTextureBackGround(backGround, texType);
@@ -142,7 +142,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
     /**
      * Loads background texture for checkbox.
      * @param {String} backGround background filename
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureBackGround: function (backGround, texType) {
         if (!backGround)
@@ -185,7 +185,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
     /**
      * Loads selected state of background texture for checkbox.
      * @param {String} backGroundSelected
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureBackGroundSelected: function (backGroundSelected, texType) {
         if (!backGroundSelected)
@@ -225,7 +225,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
     /**
      * Loads cross texture for checkbox.
      * @param {String} cross
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureFrontCross: function (cross, texType) {
         if (!cross)
@@ -264,7 +264,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
     /**
      * Loads disabled state of backGround texture for checkbox.
      * @param {String} backGroundDisabled
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureBackGroundDisabled: function (backGroundDisabled, texType) {
         if (!backGroundDisabled)
@@ -303,7 +303,7 @@ ccui.CheckBox = ccui.Widget.extend(/** @lends ccui.CheckBox# */{
     /**
      * Loads frontCrossDisabled texture for checkbox.
      * @param {String} frontCrossDisabled
-     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} texType
+     * @param {ccui.Widget.LOCAL_TEXTURE|ccui.Widget.PLIST_TEXTURE} [texType=ccui.Widget.LOCAL_TEXTURE]
      */
     loadTextureFrontCrossDisabled: function (frontCrossDisabled, texType) {
         if (!frontCrossDisabled)
@@ -664,7 +664,7 @@ _p = null;
  * @param {string} [cross]  cross texture.
  * @param {string} [backGroundDisabled]   cross dark state texture.
  * @param {string} [frontCrossDisabled]   cross dark state texture.
- * @param {Number} [texType]
+ * @param {Number} [texType=ccui.Widget.LOCAL_TEXTURE]
  * @return {ccui.CheckBox}
  * @example
  * // example
