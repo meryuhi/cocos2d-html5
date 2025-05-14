@@ -27,10 +27,14 @@ function collectFiles(files: string[], result: string[]) {
             export class Texture2D{}
             export class DirectorDelegate{}
             export class Scale9Sprite extends Node {}
+            export namespace color{}
+            export namespace loader{}
+            export namespace Codec{}
+            export namespace inputManager{}
         }
         namespace ccui
         {
-            declare var Scale9Sprite: cc.Scale9Sprite;
+            import Scale9Sprite = cc.Scale9Sprite;
             export { Scale9Sprite }
         }
         namespace ccs
@@ -43,7 +47,7 @@ function collectFiles(files: string[], result: string[]) {
         },
         assignmentPluginOptions: { breakChain: true },
         functionPluginOptions: {
-            removeNames: ["_createRenderCmd", "features"],
+            removeNames: ["_createRenderCmd", "features", "VertexType","_registerAccelerometerEvent"],
             omitCallNames: { require: "{}" },
             normalizeSignatureMethodNames: ["init", "initWithString", "initWithDuration", "initWithAction", "initWithFile", "startWithTarget", "onTouchBegan", "onTouchCancelled", "onEnter"]
         },
@@ -57,11 +61,12 @@ function collectFiles(files: string[], result: string[]) {
         namespacePluginOptions: {
             globalVarMap: {
                 cc: "cc",
+                cclegacy: "cclegacy",
                 ccui: "ccui",
                 ccs: "ccs",
             },
-            prevertParseNames: ["prototype", "create", "proto", "_tmp", "_LogInfos", "inputManager", "loader", "rendererWebGL", "AABB", "Codec", "Scale9Sprite"],
-            removeGlobalVars: ["_p", "spine", "sp", "cclegacy"],
+            prevertParseNames: ["prototype", "create", "_tmp", "_LogInfos", "Scale9Sprite"],
+            removeGlobalVars: ["_p", "__extends", "proto", "sp", "spine"],
         },
         tsIgnorePluginOptions: {
             classDeclaration: (_, p) => p && "We need to ignore the TS2416 error because cocos2d uses the same static factory method name \"create\" to create objects, which is not currently supported by Typescript.",
@@ -77,7 +82,6 @@ function collectFiles(files: string[], result: string[]) {
                 .replace(/Float32Array<.*>/g, "Float32Array")
                 .replace(/Uint32Array<.*>/g, "Uint32Array")
                 .replace(/override /g, "")
-                .replace(/& typeof loader/g, "")
         }
     });
 })()

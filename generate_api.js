@@ -20,6 +20,51 @@ cc.director = cc.Director._getInstance();
  */
 cc.winSize = cc.director.getWinSize();
 
+/**
+ * White color (255, 255, 255, 255)
+ */
+cc.color.WHITE = cc.color(255, 255, 255);
+
+/**
+ *  Yellow color (255, 255, 0, 255)
+ */
+cc.color.YELLOW = cc.color(255, 255, 0);
+
+/**
+ *  Blue color (0, 0, 255, 255)
+ */
+cc.color.BLUE = cc.color(0, 0, 255);
+
+/**
+ *  Green Color (0, 255, 0, 255)
+ */
+cc.color.GREEN = cc.color(0, 255, 0);
+
+/**
+ *  Red Color (255, 0, 0, 255)
+ */
+cc.color.RED = cc.color(255, 0, 0);
+
+/**
+ *  Magenta Color (255, 0, 255, 255)
+ */
+cc.color.MAGENTA = cc.color(255, 0, 255);
+
+/**
+ *  Black Color (0, 0, 0, 255)
+ */
+cc.color.BLACK = cc.color(0, 0, 0);
+
+/**
+ *  Orange Color (255, 127, 0, 255)
+ */
+cc.color.ORANGE = cc.color(255, 127, 0);
+
+/**
+ *  Gray Color (166, 166, 166, 255)
+ */
+cc.color.GRAY = cc.color(166, 166, 166);
+
 (function(){
     /**
      * System variables
