@@ -50,6 +50,9 @@ var PROPERTY_SELECTED = "selected";
 var PROPERTY_CCCONTROL = "ccControl";
 
 cc.ControlLoader = cc.NodeLoader.extend({
+    /**
+     * @returns {cc.Node}
+     */
     _createCCNode: function (parent, ccbReander) {
     },
     onHandlePropTypeBlockCCControl: function (node, parent, propertyName, blockCCControlData, ccbReader) {
