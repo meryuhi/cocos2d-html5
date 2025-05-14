@@ -251,7 +251,7 @@ ccs.TriggerObj = ccs.Class.extend(/** @lends ccs.TriggerObj# */{
 
     /**
      * Returns the events of ccs.TriggerObj.
-     * @returns {null|Array}
+     * @returns {null|Array<any>}
      */
     getEvents: function () {
         return this._vInt;

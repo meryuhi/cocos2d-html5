@@ -91,8 +91,8 @@ cc.defineGetterSetter = function (proto, prop, getter, setter, getterName, sette
 /**
  * Create a new object and copy all properties in an exist object to the new object
  * @function
- * @param {object|Array} obj The source object
- * @return {Array|object} The created object
+ * @param {object|Array<any>} obj The source object
+ * @return {Array<any>|object} The created object
  */
 cc.clone = function (obj) {
     // Cloning is better if the new object is having the same prototype chain

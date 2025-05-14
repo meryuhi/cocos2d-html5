@@ -610,7 +610,7 @@ ccs.Bone = ccs.Node.extend(/** @lends ccs.Bone# */{
 
     /**
      * Returns the collider body list in this bone.
-     * @returns {Array|null}
+     * @returns {Array<any>|null}
      * @deprecated since v3.0, please use getColliderDetector to get a delector, and calls its getColliderBodyList instead.
      */
     getColliderBodyList: function () {

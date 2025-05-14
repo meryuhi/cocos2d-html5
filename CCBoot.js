@@ -222,7 +222,7 @@ cc.isCrossOrigin = function (url) {
 //+++++++++++++++++++++++++something about async begin+++++++++++++++++++++++++++++++
 /**
  * Async Pool class, a helper of cc.async
- * @param {Object|Array} srcObj
+ * @param {Object|Array<any>} srcObj
  * @param {Number} limit the limit of parallel number
  * @param {function} iterator
  * @param {function} onEnd
@@ -324,7 +324,7 @@ cc.AsyncPool = function (srcObj, limit, iterator, onEnd, target) {
 cc.async = /** @lends cc.async# */{
     /**
      * Do tasks series.
-     * @param {Array|Object} tasks
+     * @param {Array<any>|Object} tasks
      * @param {function} [cb] callback
      * @param {Object} [target]
      * @return {cc.AsyncPool}
@@ -339,7 +339,7 @@ cc.async = /** @lends cc.async# */{
 
     /**
      * Do tasks parallel.
-     * @param {Array|Object} tasks
+     * @param {Array<any>|Object} tasks
      * @param {function} cb callback
      * @param {Object} [target]
      * @return {cc.AsyncPool}
@@ -354,7 +354,7 @@ cc.async = /** @lends cc.async# */{
 
     /**
      * Do tasks waterfall.
-     * @param {Array|Object} tasks
+     * @param {Array<any>|Object} tasks
      * @param {function} cb callback
      * @param {Object} [target]
      * @return {cc.AsyncPool}
@@ -383,7 +383,7 @@ cc.async = /** @lends cc.async# */{
 
     /**
      * Do tasks by iterator.
-     * @param {Array|Object} tasks
+     * @param {Array<any>|Object} tasks
      * @param {function|Object} iterator
      * @param {function} [callback]
      * @param {Object} [target]
@@ -403,7 +403,7 @@ cc.async = /** @lends cc.async# */{
 
     /**
      * Do tasks by iterator limit.
-     * @param {Array|Object} tasks
+     * @param {Array<any>|Object} tasks
      * @param {Number} limit
      * @param {function} iterator
      * @param {function} cb callback

@@ -330,7 +330,7 @@ cc.ActionInterval.create = cc.actionInterval;
  * Runs actions sequentially, one after another.
  * @class
  * @extends cc.ActionInterval
- * @param {Array|cc.FiniteTimeAction} tempArray
+ * @param {Array<any>|cc.FiniteTimeAction} tempArray
  * @example
  * // create sequence with actions
  * var seq = new cc.Sequence(act1, act2);
@@ -346,7 +346,7 @@ cc.Sequence = cc.ActionInterval.extend(/** @lends cc.Sequence# */{
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
      * Create an array of sequenceable actions.
-     * @param {Array|cc.FiniteTimeAction} tempArray
+     * @param {Array<any>|cc.FiniteTimeAction} tempArray
      */
     ctor: function (tempArray) {
         cc.ActionInterval.prototype.ctor.call(this);
@@ -485,7 +485,7 @@ cc.Sequence = cc.ActionInterval.extend(/** @lends cc.Sequence# */{
 
 /** helper constructor to create an array of sequenceable actions
  * @function
- * @param {Array|cc.FiniteTimeAction} tempArray
+ * @param {Array<any>|cc.FiniteTimeAction} tempArray
  * @return {cc.Sequence}
  * @example
  * // example
@@ -527,7 +527,7 @@ cc.sequence = function (/*Multiple Arguments*/tempArray) {
  * helper constructor to create an array of sequenceable actions
  * @static
  * @deprecated since v3.0 <br /> Please use cc.sequence instead.
- * @param {Array|cc.FiniteTimeAction} tempArray
+ * @param {Array<any>|cc.FiniteTimeAction} tempArray
  * @return {cc.Sequence}
  */
 cc.Sequence.create = cc.sequence;
@@ -860,7 +860,7 @@ cc.repeatForever = function (action) {
  * @deprecated since v3.0 <br /> Please use cc.repeatForever instead.
  * @param {cc.FiniteTimeAction} action
  * @return {cc.RepeatForever}
- * @param {Array|cc.FiniteTimeAction} tempArray
+ * @param {Array<any>|cc.FiniteTimeAction} tempArray
  * @example
  * var action = new cc.Spawn(cc.jumpBy(2, cc.p(300, 0), 50, 4), cc.rotateBy(2, 720));
  */
@@ -877,7 +877,7 @@ cc.Spawn = cc.ActionInterval.extend(/** @lends cc.Spawn# */{
 
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
-     * @param {Array|cc.FiniteTimeAction} tempArray
+     * @param {Array<any>|cc.FiniteTimeAction} tempArray
      */
     ctor: function (tempArray) {
         cc.ActionInterval.prototype.ctor.call(this);
@@ -996,7 +996,7 @@ cc.Spawn = cc.ActionInterval.extend(/** @lends cc.Spawn# */{
 /**
  * Create a spawn action which runs several actions in parallel.
  * @function
- * @param {Array|cc.FiniteTimeAction}tempArray
+ * @param {Array<any>|cc.FiniteTimeAction}tempArray
  * @return {cc.Spawn}
  * @example
  * // example
@@ -1021,7 +1021,7 @@ cc.spawn = function (/*Multiple Arguments*/tempArray) {
  * Create a spawn action which runs several actions in parallel.
  * @static
  * @deprecated since v3.0 <br /> Please use cc.spawn instead.
- * @param {Array|cc.FiniteTimeAction}tempArray
+ * @param {Array<any>|cc.FiniteTimeAction}tempArray
  * @return {cc.Spawn}
  */
 cc.Spawn.create = cc.spawn;

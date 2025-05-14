@@ -390,7 +390,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
      * @param {cc.Color} start
      * @param {cc.Color} end
      * @param {cc.Point} [v=cc.p(0, -1)]
-     * @param {Array|Null} stops
+     * @param {Array<any>|Null} stops
      *
      * @example Using ColorStops argument:
      * //startColor & endColor are for default and backward compatibility
@@ -423,7 +423,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
      * @param {cc.Color} start starting color
      * @param {cc.Color} end
      * @param {cc.Point|Null} v
-     * @param {Array|Null} stops
+     * @param {Array<any>|Null} stops
      * @return {Boolean}
      */
     init: function (start, end, v, stops) {
@@ -649,7 +649,7 @@ cc.LayerGradient = cc.LayerColor.extend(/** @lends cc.LayerGradient# */{
  * @param {cc.Color} start starting color
  * @param {cc.Color} end ending color
  * @param {cc.Point|Null} v
- * @param {Array|NULL} stops
+ * @param {Array<any>|NULL} stops
  * @return {cc.LayerGradient}
  */
 cc.LayerGradient.create = function (start, end, v, stops) {

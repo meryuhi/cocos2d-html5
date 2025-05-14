@@ -324,7 +324,7 @@ ccs.ArmatureAnimation = ccs.ProcessBase.extend(/** @lends ccs.ArmatureAnimation#
 
     /**
      * Plays animation with index, the other param is the same to play.
-     * @param {Number|Array} animationIndex
+     * @param {Number|Array<any>} animationIndex
      * @param {Number} durationTo
      * @param {Number} loop
      */
